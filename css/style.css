@@ -1,0 +1,210 @@
+@font-face{
+    font-family: 'Mitra';
+    src: local("Mitra"),local("B Mitra"), local("F Mitra") , url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'),    
+          url('../fonts/BMitra.woff') format('woff'),
+          url('../fonts/BMitra.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+span.top:before {
+  content: "\e113";
+  font-size: 2em;
+}
+	body{
+		background: #1e1202;
+		padding:0px;
+		margin: 0px;
+	}
+	div{
+		display: block;
+	}
+	div.first{
+		top:0;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+		font-family: 'Mitra';
+		font-size: 1.7em;
+		direction: rtl;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px;
+		position: fixed;
+		background: #70c73c;
+		z-index: 9;
+	}
+	div.logo{
+		background: url('../img/rishe-logo.png');
+		width: 350px;
+		height: 280px;
+		background-size: cover;
+		background-position: 0px -10px;
+		margin : auto	;
+		opacity: 1;
+	}
+	div.first p {
+		margin: auto;
+		text-align: center;
+		font-size: 60pt;
+		font-weight: bold;
+		font-family: 'Mitra';
+	}
+	div.description{
+		top:200%;
+		z-index: 8;
+		color: #454545;
+		width: 100%;
+		height: 100%;
+		font-family: 'Mitra';
+		font-size: 1.7em;
+		direction: rtl;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px;
+		position: fixed;
+		background: #eee;
+	}
+	div.description img{
+		opacity: 0.3;
+	}
+	div.web{
+		top:300%;
+		z-index: 7;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+		font-family: 'Mitra';
+		font-size: 1.7em;
+		direction: rtl;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px;
+		position: fixed;
+		background: #9e6b42;
+
+	}
+	div.web h1{
+		direction: ltr;
+		font-family: sans-serif;
+		letter-spacing: 0.1em;
+		font-size: 3em;	
+	}
+	div.mobile{
+		top:400%;
+		z-index: 6;
+		background: #582b07;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+		font-family: 'Mitra';
+		font-size: 1.7em;
+		direction: rtl;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px;
+		position: fixed;
+	}
+	div.mobile p {
+		width: 64%;
+		margin:auto;
+		margin-top: 1.7%;
+	}
+	div.contact{
+		top:100%;
+		z-index: 10;
+		background: #1e1202;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+		font-family: 'Mitra';
+		font-size: 1.7em;
+		direction: rtl;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px;
+		position: absolute;
+	}
+	div.description p {
+		margin-right: 1.6%;
+		width: 75%;
+		padding: 0px;
+		text-align: justify;
+		position: absolute;
+		height: 30%;
+		margin-top: 10%;
+		margin-right: 10%;
+		font-style: italic;
+	}
+	div.fade{
+		width: 100%;
+		position: relative;
+		margin: auto;
+		text-align: center;
+	}
+	div h1{
+		margin-top: 0px;
+		padding: 0px;
+	}
+
+	div.web p{
+		text-align: justify !important;
+		margin: auto;
+		width: 64%;
+	}
+
+	a{
+		color: #fff;
+		text-decoration: none;
+		margin-left: 15px;
+	}
+	div.first a{
+		text-decoration: overline;
+	}
+	div.first a:hover{
+		color: #333;
+		opacity: 0.8;
+
+	}
+	a.top{
+		position: fixed;
+		bottom: 2%;
+		right: 2%;
+		z-index: 999;
+		background: rgba(55,55,55,0.5);
+		padding: 5px;
+	}
+	a.top:hover{
+		cursor: pointer;
+	}
+	@media(max-width: 480px){
+		div.description p {
+		margin-right: 1.6%;
+		font-size: 14pt !important;
+		width: 98%;
+		padding: 0px;
+		text-align: justify;
+		position: absolute;
+		
+		margin-right: 1%;
+		font-style: italic;
+	}
+	}

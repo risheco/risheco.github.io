@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+@font-face{
+    font-family: 'Roya';
+    src: url('../fonts/BRoya.woff') format('woff'),
+    url('../fonts/BRoya.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BRoya.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Mitra';
+    src: url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BMitra.woff') format('woff'),
+    url('../fonts/BMitra.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Davat';
+    src: url('../fonts/BDavat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BDavat.woff') format('woff'),
+    url('../fonts/BDavat.ttf') format('truetype');
+}
+body{
+    background: -webkit-linear-gradient(#cda452,#cda452, #806733); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#cda452,#cda452, #806733); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#cda452,#cda452, #806733); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#cdb25c,#cdb25c,#cdb25c,#cdb25c, #a38446, #805d2e);
+    text-align: center;
+    margin: -1px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+h1{
+    color: #ffffff;
+    font-family:'Mitra', sans-serif;
+    font-size: 100px;
+    position: static;
+    padding-left: 30%;
+    margin-top: 100px;
+}
+
+div.footer{
+    width: 100%;
+    font-family:'Mitra', sans-serif;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1%;
+}
+div.menu{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    opacity: 0.8;
+    margin: 0px;
+    padding-right: 0px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+}
+
+span.menu{
+    color: #ffffff;
+    line-height: 50px;
+    margin-right: 3%;
+    cursor: hand;
+}
+span.menu:hover{
+    color: sandybrown;
+}
+div.header{
+    padding: 5%;
+}
+div.logo{
+    background: url('../img/rishe-logo.png');
+    width: 30%;
+    margin-right: 5%;
+    height: 350px;
+    background-size: cover;
+    background-position: 0px -10px;
+    position: fixed;
+    margin-left : 5%;
+    opacity: 0.999;
+    position: fixed;
+    top: 0;
+}
+
+div.container{
+    padding-top: 50px;
+    margin-right: 10%;
+    margin-left: 35%;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: right;
+    direction: rtl;
+}
+div.links{
+    min-width: 185px;
+    margin: 2%;
+}
+button.link{
+    background-color: transparent;
+    border-style: none;
+
+    color: white;
+    font-size: 26px;
+    cursor: hand;
+    line-height: 30px;
+
+    margin-right: 5%;
+    margin-left: 5%;
+}
+button.link:hover{
+    -webkit-transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1.0);
+}

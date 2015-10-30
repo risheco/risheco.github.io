@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+@font-face{
+    font-family: 'Roya';
+    src: url('../fonts/BRoya.woff') format('woff'),
+    url('../fonts/BRoya.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BRoya.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Mitra';
+    src: url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BMitra.woff') format('woff'),
+    url('../fonts/BMitra.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Davat';
+    src: url('../fonts/BDavat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BDavat.woff') format('woff'),
+    url('../fonts/BDavat.ttf') format('truetype');
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    padding: 0px;
+    margin: 0px;
+}
+div#main{
+    background-color: #ffffff;
+    width: 95%;
+    height: auto;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div#header{
+    width: 101%;
+    height: 250px;
+    background-color: #c9c9c9;
+    padding: 0px;
+    margin-right: -0.5%;
+    margin-left: -0.5%;
+
+}
+img#header-logo{
+    height: 280px;
+    margin-top: -15px;
+    margin-right: -30px;
+    float: right;
+}
+div.logo{
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+div.title{
+    direction: rtl;
+    text-align: right;
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+h1{
+    font-family: 'Mitra', sans-serif;
+    color: white;
+    font-size: 150px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+h2{
+    font-family: 'Mitra', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+div.item{
+    width: 200px;
+    height: 400px;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: groove;
+
+}
+img.item{
+    width: 190px;
+    margin: 5px;
+ }
