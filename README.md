@@ -1,6 +1,6 @@
 # Rishe Co. website front-end project
 
-<!--## Running project -->
+##### Running project :
 
 ### install node task management and server dependencies :
 ```
