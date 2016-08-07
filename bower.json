@@ -1,0 +1,20 @@
+{
+  "name": "Rishe",
+  "authors": [
+    "Amirmohammad.moradi@gmail.com <Amirmohammad.moradi@gmail.com>"
+  ],
+  "description": "Rishe Software Group",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

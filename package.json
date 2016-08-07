@@ -1,0 +1,23 @@
+{
+  "name": "Rishe",
+  "version": "0.0.0",
+  "description": "Rishe Software Group",
+  "main": "gulp.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@repo.rishe.me:MyTeam/Frontend.git"
+  },
+  "author": "AmirMohammad Moradi, MohammadAmin Masoudi",
+  "license": "ISC"
+}
