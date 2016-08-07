@@ -1,18 +1,18 @@
 # Rishe Co. website front-end project
 
-##### Running project :
+###### Running project :
 
-### install node task management and server dependencies :
+#### install node task management and server dependencies :
 ```
 npm install
 ```
 
-### install bower dependencies 
+#### install bower dependencies :
 ```
 bower install
 ```
 
-### run gulp default task by running :
+#### run gulp default task by running :
 ``` 
 gulp 
 ```
