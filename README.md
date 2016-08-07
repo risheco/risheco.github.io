@@ -1,6 +1,6 @@
 # Rishe Co. website front-end project
 
-###### Running project :
+###### Installation :
 
 #### install node task management and server dependencies :
 ```
@@ -19,5 +19,6 @@ gulp
 
 
 ###### Website :
-
+```
 ##### http://rishe.co/ 
+```
