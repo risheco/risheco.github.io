@@ -1,9 +1,58 @@
+a {
+  text-decoration: none; }
+
 @font-face {
   font-family: "yekan";
   src: url(../fonts/Yekan.eot);
   src: url(../fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(../fonts/Yekan.woff) format("woff"), url(../fonts/Yekan.ttf) format("truetype"), url(../fonts/Yekan.svg#BYekan) format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.button {
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: 100px;
+  width: auto;
+  height: 35px;
+  line-height: 35px;
+  padding: 10px;
+  text-align: center; }
+  .button.white {
+    color: #fff;
+    border: 2px solid #fff; }
+    .button.white:hover {
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+      transition: all ease-out 0.3s; }
+  .button.blue {
+    color: #40A4B1;
+    border: 2px solid #40A4B1; }
+    .button.blue:hover {
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+      transition: all ease-out 0.3s; }
+  .button.orange {
+    color: #ff9933;
+    border: 2px solid #ff9933; }
+    .button.orange:hover {
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+      transition: all ease-out 0.3s; }
+  .button.gray {
+    color: #444;
+    border: 2px solid #444; }
+    .button.gray:hover {
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+      transition: all ease-out 0.3s; }
 
 @media screen and (max-width: 480px) {
   body {
