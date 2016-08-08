@@ -1,0 +1,16 @@
+@import "variables";
+@import "fonts";
+
+@media screen and (max-width: 480px){
+  @import "index(phone)";
+}
+@media screen and (max-width: 1024px) and (orientation: portrait){
+  @import "index(phone)";
+}
+@media screen and (max-width: 1024px) and (orientation: landscape){
+  @import "index(desktop)";
+}
+@media screen and (min-width: 1025px){
+  @import "index(desktop)";
+}
+

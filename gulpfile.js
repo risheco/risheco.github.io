@@ -14,7 +14,6 @@ gulp.task('reload' , function () {
 }) ;
 
 gulp.task('styles', function() {
-    console.log("Re-Compiling");
     gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/'));
