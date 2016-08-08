@@ -42,6 +42,13 @@ body{
   @include drawSVG(#_x31_2,1000,1000,5s,4s);
 
   .loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: darken($white,15%);
     svg{
       &#logoAnimation {
         width: 500px;
@@ -60,6 +67,74 @@ body{
         left: 50%;
         opacity: 1;
         @include fadeIn(2s,0s);
+      }
+    }
+  }
+  .content {
+    display: none;
+    section {
+      width: 100vm;
+      height: 100vh;
+      &#solutions {
+        .slant-container{
+          width: 0;
+          height: 100%;
+          float: left;
+          .slant-white{
+            position: relative;
+            width:100%;
+            height:50%;
+            &:after{
+              content: '';
+              position: absolute;
+              left:100%;
+              top:0;
+              border : {
+                top: 50vh solid $white;
+                left: 0 solid $white;
+                right:50px solid transparent;
+                bottom:50px solid transparent;
+              }
+            }
+          }
+          .slant-blue {
+            position: relative;
+            width:100%;
+            height: 50%;
+            &:after{
+              content: '';
+              position: absolute;
+              right:100%;
+              bottom:0;
+              border : {
+                top: 50px solid transparent;
+                left: 50px solid transparent;
+                right:0 solid transparent;
+                bottom:50vh solid $blue;
+              }
+            }
+          }
+        }
+        #web {
+          background-color: $white;
+          height: 100%;
+          width: 50%;
+          float: left;
+          transition: all 0.5s ease-in;
+        }
+        #app {
+          background-color: $blue;
+          height: 100%;
+          width: 50%;
+          float: right;
+          @include transition(all 0.5s ease-in);
+        }
+        .increaseWidth{
+          width: 55% !important;
+        }
+        .decreaseWidth{
+          width: 45% !important;
+        }
       }
     }
   }

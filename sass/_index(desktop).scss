@@ -16,7 +16,13 @@ body {
   @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
   .loading {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: darken($white,15%);
     svg {
       &#logoAnimation {
         width: 400px;
@@ -41,7 +47,7 @@ body {
   }
 
   .content {
-    //display: none;
+    display: none;
     section {
       width: 100vm;
       height: 100vh;

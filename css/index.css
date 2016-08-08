@@ -147,27 +147,90 @@ body {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
-    body .loading svg#logoAnimation {
-      width: 500px;
-      height: auto;
-      position: absolute;
-      margin-left: -250px;
+    body .loading {
+      position: fixed;
       top: 0;
-      left: 50%; }
-    body .loading svg#wait {
-      width: 250px;
-      height: auto;
-      position: absolute;
-      margin-left: -125px;
-      bottom: 100px;
-      left: 50%;
-      opacity: 1;
-      animation: fadeInAnim 2s 0s; }
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #d9d9d9; }
+      body .loading svg#logoAnimation {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        margin-left: -250px;
+        top: 0;
+        left: 50%; }
+      body .loading svg#wait {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        margin-left: -125px;
+        bottom: 100px;
+        left: 50%;
+        opacity: 1;
+        animation: fadeInAnim 2s 0s; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
     to {
-      opacity: 1; } } }
+      opacity: 1; } }
+    body .content {
+      display: none; }
+      body .content section {
+        width: 100vm;
+        height: 100vh; }
+        body .content section#solutions .slant-container {
+          width: 0;
+          height: 100%;
+          float: left; }
+          body .content section#solutions .slant-container .slant-white {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-white:after {
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 0;
+              border-top: 50vh solid #fff;
+              border-left: 0 solid #fff;
+              border-right: 50px solid transparent;
+              border-bottom: 50px solid transparent; }
+          body .content section#solutions .slant-container .slant-blue {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-blue:after {
+              content: '';
+              position: absolute;
+              right: 100%;
+              bottom: 0;
+              border-top: 50px solid transparent;
+              border-left: 50px solid transparent;
+              border-right: 0 solid transparent;
+              border-bottom: 50vh solid #339999; }
+        body .content section#solutions #web {
+          background-color: #fff;
+          height: 100%;
+          width: 50%;
+          float: left;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions #app {
+          background-color: #339999;
+          height: 100%;
+          width: 50%;
+          float: right;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions .increaseWidth {
+          width: 55% !important; }
+        body .content section#solutions .decreaseWidth {
+          width: 45% !important; } }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
   body {
@@ -258,27 +321,90 @@ body {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
-    body .loading svg#logoAnimation {
-      width: 500px;
-      height: auto;
-      position: absolute;
-      margin-left: -250px;
+    body .loading {
+      position: fixed;
       top: 0;
-      left: 50%; }
-    body .loading svg#wait {
-      width: 250px;
-      height: auto;
-      position: absolute;
-      margin-left: -125px;
-      bottom: 100px;
-      left: 50%;
-      opacity: 1;
-      animation: fadeInAnim 2s 0s; }
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #d9d9d9; }
+      body .loading svg#logoAnimation {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        margin-left: -250px;
+        top: 0;
+        left: 50%; }
+      body .loading svg#wait {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        margin-left: -125px;
+        bottom: 100px;
+        left: 50%;
+        opacity: 1;
+        animation: fadeInAnim 2s 0s; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
     to {
-      opacity: 1; } } }
+      opacity: 1; } }
+    body .content {
+      display: none; }
+      body .content section {
+        width: 100vm;
+        height: 100vh; }
+        body .content section#solutions .slant-container {
+          width: 0;
+          height: 100%;
+          float: left; }
+          body .content section#solutions .slant-container .slant-white {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-white:after {
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 0;
+              border-top: 50vh solid #fff;
+              border-left: 0 solid #fff;
+              border-right: 50px solid transparent;
+              border-bottom: 50px solid transparent; }
+          body .content section#solutions .slant-container .slant-blue {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-blue:after {
+              content: '';
+              position: absolute;
+              right: 100%;
+              bottom: 0;
+              border-top: 50px solid transparent;
+              border-left: 50px solid transparent;
+              border-right: 0 solid transparent;
+              border-bottom: 50vh solid #339999; }
+        body .content section#solutions #web {
+          background-color: #fff;
+          height: 100%;
+          width: 50%;
+          float: left;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions #app {
+          background-color: #339999;
+          height: 100%;
+          width: 50%;
+          float: right;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions .increaseWidth {
+          width: 55% !important; }
+        body .content section#solutions .decreaseWidth {
+          width: 45% !important; } }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   body {
@@ -370,7 +496,13 @@ body {
     to {
       stroke-dashoffset: 0; } }
     body .loading {
-      display: none; }
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #d9d9d9; }
       body .loading svg#logoAnimation {
         width: 400px;
         height: auto;
@@ -392,59 +524,61 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-    body .content section {
-      width: 100vm;
-      height: 100vh; }
-      body .content section#solutions .slant-container {
-        width: 0;
-        height: 100%;
-        float: left; }
-        body .content section#solutions .slant-container .slant-white {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-white:after {
-            content: '';
-            position: absolute;
-            left: 100%;
-            top: 0;
-            border-top: 50vh solid #fff;
-            border-left: 0 solid #fff;
-            border-right: 50px solid transparent;
-            border-bottom: 50px solid transparent; }
-        body .content section#solutions .slant-container .slant-blue {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-blue:after {
-            content: '';
-            position: absolute;
-            right: 100%;
-            bottom: 0;
-            border-top: 50px solid transparent;
-            border-left: 50px solid transparent;
-            border-right: 0 solid transparent;
-            border-bottom: 50vh solid #339999; }
-      body .content section#solutions #web {
-        background-color: #fff;
-        height: 100%;
-        width: 50%;
-        float: left;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions #app {
-        background-color: #339999;
-        height: 100%;
-        width: 50%;
-        float: right;
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -ms-transition: all 0.5s ease-in;
-        -o-transition: all 0.5s ease-in;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions .increaseWidth {
-        width: 55% !important; }
-      body .content section#solutions .decreaseWidth {
-        width: 45% !important; } }
+    body .content {
+      display: none; }
+      body .content section {
+        width: 100vm;
+        height: 100vh; }
+        body .content section#solutions .slant-container {
+          width: 0;
+          height: 100%;
+          float: left; }
+          body .content section#solutions .slant-container .slant-white {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-white:after {
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 0;
+              border-top: 50vh solid #fff;
+              border-left: 0 solid #fff;
+              border-right: 50px solid transparent;
+              border-bottom: 50px solid transparent; }
+          body .content section#solutions .slant-container .slant-blue {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-blue:after {
+              content: '';
+              position: absolute;
+              right: 100%;
+              bottom: 0;
+              border-top: 50px solid transparent;
+              border-left: 50px solid transparent;
+              border-right: 0 solid transparent;
+              border-bottom: 50vh solid #339999; }
+        body .content section#solutions #web {
+          background-color: #fff;
+          height: 100%;
+          width: 50%;
+          float: left;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions #app {
+          background-color: #339999;
+          height: 100%;
+          width: 50%;
+          float: right;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions .increaseWidth {
+          width: 55% !important; }
+        body .content section#solutions .decreaseWidth {
+          width: 45% !important; } }
 
 @media screen and (min-width: 1025px) {
   body {
@@ -536,7 +670,13 @@ body {
     to {
       stroke-dashoffset: 0; } }
     body .loading {
-      display: none; }
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #d9d9d9; }
       body .loading svg#logoAnimation {
         width: 400px;
         height: auto;
@@ -558,56 +698,58 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-    body .content section {
-      width: 100vm;
-      height: 100vh; }
-      body .content section#solutions .slant-container {
-        width: 0;
-        height: 100%;
-        float: left; }
-        body .content section#solutions .slant-container .slant-white {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-white:after {
-            content: '';
-            position: absolute;
-            left: 100%;
-            top: 0;
-            border-top: 50vh solid #fff;
-            border-left: 0 solid #fff;
-            border-right: 50px solid transparent;
-            border-bottom: 50px solid transparent; }
-        body .content section#solutions .slant-container .slant-blue {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-blue:after {
-            content: '';
-            position: absolute;
-            right: 100%;
-            bottom: 0;
-            border-top: 50px solid transparent;
-            border-left: 50px solid transparent;
-            border-right: 0 solid transparent;
-            border-bottom: 50vh solid #339999; }
-      body .content section#solutions #web {
-        background-color: #fff;
-        height: 100%;
-        width: 50%;
-        float: left;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions #app {
-        background-color: #339999;
-        height: 100%;
-        width: 50%;
-        float: right;
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -ms-transition: all 0.5s ease-in;
-        -o-transition: all 0.5s ease-in;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions .increaseWidth {
-        width: 55% !important; }
-      body .content section#solutions .decreaseWidth {
-        width: 45% !important; } }
+    body .content {
+      display: none; }
+      body .content section {
+        width: 100vm;
+        height: 100vh; }
+        body .content section#solutions .slant-container {
+          width: 0;
+          height: 100%;
+          float: left; }
+          body .content section#solutions .slant-container .slant-white {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-white:after {
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 0;
+              border-top: 50vh solid #fff;
+              border-left: 0 solid #fff;
+              border-right: 50px solid transparent;
+              border-bottom: 50px solid transparent; }
+          body .content section#solutions .slant-container .slant-blue {
+            position: relative;
+            width: 100%;
+            height: 50%; }
+            body .content section#solutions .slant-container .slant-blue:after {
+              content: '';
+              position: absolute;
+              right: 100%;
+              bottom: 0;
+              border-top: 50px solid transparent;
+              border-left: 50px solid transparent;
+              border-right: 0 solid transparent;
+              border-bottom: 50vh solid #339999; }
+        body .content section#solutions #web {
+          background-color: #fff;
+          height: 100%;
+          width: 50%;
+          float: left;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions #app {
+          background-color: #339999;
+          height: 100%;
+          width: 50%;
+          float: right;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in; }
+        body .content section#solutions .increaseWidth {
+          width: 55% !important; }
+        body .content section#solutions .decreaseWidth {
+          width: 45% !important; } }
