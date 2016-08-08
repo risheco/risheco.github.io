@@ -16,6 +16,7 @@ body {
   @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
   .loading {
+    display: none;
     svg {
       &#logoAnimation {
         width: 400px;
@@ -40,7 +41,7 @@ body {
   }
 
   .content {
-    display: none;
+    //display: none;
     section {
       width: 100vm;
       height: 100vh;
@@ -89,12 +90,20 @@ body {
           height: 100%;
           width: 50%;
           float: left;
+          transition: all 0.5s ease-in;
         }
         #app {
           background-color: $blue;
           height: 100%;
           width: 50%;
           float: right;
+          @include transition(all 0.5s ease-in);
+        }
+        .increaseWidth{
+          width: 55% !important;
+        }
+        .decreaseWidth{
+          width: 45% !important;
         }
       }
     }
