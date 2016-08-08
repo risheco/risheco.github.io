@@ -1,3 +1,8 @@
-a {
-  text-decoration: none;
+body {
+  direction: rtl;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+  }
 }

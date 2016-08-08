@@ -1,0 +1,73 @@
+// loading rishe
+@mixin fadeIn($duration,$delay,$times) {
+  animation: fadeInAnim $duration $delay $times;
+  @keyframes fadeInAnim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@mixin fadeInOut($duration,$delay,$times) {
+  animation: fadeInAnim $duration $delay $times;
+  @keyframes fadeInAnim {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+@mixin drawSVG($id,$length,$speed,$duration,$delay,$style) {
+  #logoAnimation path#{$id} {
+    stroke-dasharray: $speed;
+    stroke-dashoffset: $length;
+    animation: dash $duration $style forwards $delay;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+@mixin drawSVGReverse($id,$length,$speed,$duration,$delay) {
+  path#{$id} {
+    stroke-dasharray: $speed;
+    stroke-dashoffset: $length;
+    animation: dash $duration linear forwards $delay;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+//button
+@mixin button($color,$name) {
+  &.#{$name} {
+    color: $color;
+    border: 2px solid $color;
+    &:hover {
+      //background-color: $color;
+      //@if $color == $white {
+      //  color: $gray;
+      //} @else {
+      //  color: $white;
+      //}
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+      transition: all ease-out 0.3s;
+    }
+  }
+}
