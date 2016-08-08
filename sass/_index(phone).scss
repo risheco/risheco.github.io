@@ -1,2 +1,66 @@
 body{
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+
+  @mixin fadeIn($duration,$delay){
+    animation: fadeInAnim $duration $delay;
+    @keyframes fadeInAnim {
+      from{
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  @mixin drawSVG($id,$length,$speed,$duration,$delay){
+    path#{$id} {
+      stroke-dasharray: $speed;
+      stroke-dashoffset: $length;
+      animation: dash $duration linear forwards $delay;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  @include drawSVG(#_x31_,1000,1000,5s,0s);
+  @include drawSVG(#_x33_,1000,1000,3s,0.5s);
+  @include drawSVG(#_x34_,1000,1000,2s,0.5s);
+  @include drawSVG(#_x32_,1000,1000,3s,1.1s);
+  @include drawSVG(#_x35_,1000,1000,3s,1s);
+  @include drawSVG(#_x36_,1000,1000,3s,2.5s);
+  @include drawSVG(#_x31_1,1000,1000,3s,2.7s);
+  @include drawSVG(#_x37_,1000,1000,3s,2.7s);
+  @include drawSVG(#_x38_,1000,1000,3s,2.8s);
+  @include drawSVG(#_x39_,1000,1000,3s,3.1s);
+  @include drawSVG(#_x31_0,1000,1000,2.5s,3.15s);
+  @include drawSVG(#_x31_2,1000,1000,5s,4s);
+
+  .loading{
+    svg{
+      &#logoAnimation {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        margin-left: -250px;
+        top: 0;
+        left: 50%;
+      }
+      &#wait{
+        width: 250px;
+        height: auto;
+        position: absolute;
+        margin-left: -125px;
+        bottom: 100px;
+        left: 50%;
+        opacity: 1;
+        @include fadeIn(2s,0s);
+      }
+    }
+  }
 }
