@@ -1,7 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: $white;
   @include drawSVG(#_x31_, 1000, 1000, 5s, 0s, linear);
   @include drawSVG(#_x33_, 1000, 1000, 3s, 0.5s, linear);
   @include drawSVG(#_x34_, 1000, 1000, 2s, 0.5s, linear);
@@ -48,6 +45,26 @@ body {
 
   .content {
     display: none;
+    #intro {
+      .logo{
+        float: right;
+        width:50%;
+        height: 100%;
+        .logoSvg{
+          width: 40%;
+          height: auto;
+          position: absolute;
+          margin-left: -200px;
+          top: 0;
+          right: 50px;
+        }
+      }
+      #introduction{
+        float: left;
+        width:50%;
+        height:100%;
+      }
+    }
     section {
       width: 100vm;
       height: 100vh;
