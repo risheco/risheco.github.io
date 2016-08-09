@@ -70,12 +70,14 @@ body {
   width: auto;
   height: 35px;
   line-height: 35px;
-  padding: 10px;
   text-align: center; }
   .button.white {
     color: #fff;
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    background-color: transparent; }
     .button.white:hover {
+      border: 2px solid #f2f2f2;
+      color: #f2f2f2;
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -83,8 +85,11 @@ body {
       transition: all ease-out 0.3s; }
   .button.blue {
     color: #339999;
-    border: 2px solid #339999; }
+    border: 2px solid #339999;
+    background-color: transparent; }
     .button.blue:hover {
+      border: 2px solid #2d8686;
+      color: #2d8686;
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -92,8 +97,11 @@ body {
       transition: all ease-out 0.3s; }
   .button.orange {
     color: #ff9933;
-    border: 2px solid #ff9933; }
+    border: 2px solid #ff9933;
+    background-color: transparent; }
     .button.orange:hover {
+      border: 2px solid #ff8c1a;
+      color: #ff8c1a;
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -101,13 +109,23 @@ body {
       transition: all ease-out 0.3s; }
   .button.gray {
     color: #444;
-    border: 2px solid #444; }
+    border: 2px solid #444;
+    background-color: transparent; }
     .button.gray:hover {
+      border: 2px solid #373737;
+      color: #373737;
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
       -o-transition: all ease-out 0.3s;
       transition: all ease-out 0.3s; }
+  .button.small {
+    min-width: 50px;
+    width: 50px; }
+  .button:focus {
+    outline: none; }
+  .button i:focus {
+    outline: none; }
 
 @media screen and (max-width: 480px) {
   body {
@@ -543,6 +561,7 @@ body {
     to {
       stroke-dashoffset: 0; } }
   body .loading {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -571,71 +590,123 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-  body .content {
-    display: none; }
-    body .content #intro {
-      background: url("../img/bg-cr.jpg") center bottom no-repeat;
-      background-size: 100% 100%; }
+  body .content section {
+    width: 100vw;
+    height: 100vh; }
+  body .content #intro {
+    background-color: #444;
+    background: url("../img/bg-cr.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #intro #pngLogo {
+      color: #fff; }
       body .content #intro #pngLogo img {
         width: auto;
         height: 95vh;
         position: absolute;
         right: 50%;
-        top: 0px;
+        top: 0;
         transform: translate(50%, -20%); }
-    body .content section {
-      width: 100vw;
-      height: 100vh; }
-      body .content section#solutions .slant-container {
-        width: 0;
-        height: 100%;
-        float: left; }
-        body .content section#solutions .slant-container .slant-white {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-white:after {
-            content: '';
+      body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
+        min-width: 100px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-weight: 200; }
+      body .content #intro #pngLogo .pe {
+        margin-right: -200px; }
+        body .content #intro #pngLogo .pe .big {
+          line-height: 5.5rem;
+          position: absolute;
+          font-size: 5.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .pe .big .small {
             position: absolute;
-            left: 100%;
-            top: 0;
-            border-top: 50vh solid #fff;
-            border-left: 0 solid #fff;
-            border-right: 50px solid transparent;
-            border-bottom: 50px solid transparent; }
-        body .content section#solutions .slant-container .slant-blue {
+            font-size: 1rem;
+            top: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .eng {
+        margin-right: 150px; }
+        body .content #intro #pngLogo .eng .big {
+          line-height: 5.5rem;
           position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-blue:after {
-            content: '';
+          font-size: 4.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .eng .big .small {
             position: absolute;
-            right: 100%;
-            bottom: 0;
-            border-top: 50px solid transparent;
-            border-left: 50px solid transparent;
-            border-right: 0 solid transparent;
-            border-bottom: 50vh solid #339999; }
-      body .content section#solutions #web {
-        background-color: #fff;
-        height: 100%;
-        width: 50%;
-        float: left;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions #app {
-        background-color: #339999;
-        height: 100%;
-        width: 50%;
-        float: right;
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -ms-transition: all 0.5s ease-in;
-        -o-transition: all 0.5s ease-in;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions .increaseWidth {
-        width: 55% !important; }
-      body .content section#solutions .decreaseWidth {
-        width: 45% !important; } }
+            font-size: 1rem;
+            bottom: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .goDownBtn {
+        bottom: 2vh; }
+  body .content #solutions .slant-container {
+    width: 0;
+    height: 100%;
+    float: left; }
+    body .content #solutions .slant-container .slant-white {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      body .content #solutions .slant-container .slant-white:after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 0;
+        border-top: 50vh solid #fff;
+        border-left: 0 solid #fff;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent; }
+    body .content #solutions .slant-container .slant-blue {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      body .content #solutions .slant-container .slant-blue:after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        border-top: 50px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 0 solid transparent;
+        border-bottom: 50vh solid #444; }
+  body .content #solutions #web {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    float: left;
+    transition: all 0.5s ease-in; }
+  body .content #solutions #app {
+    background-color: #444;
+    height: 100%;
+    width: 50%;
+    float: right;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+  body .content #solutions .increaseWidth {
+    width: 55% !important; }
+  body .content #solutions .decreaseWidth {
+    width: 45% !important; }
+  body .content #solutions .goDownBtn {
+    bottom: -98vh; }
+  body .content #solutions .goTopBtn {
+    bottom: -98vh; }
+  body .goDownBtn {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%); }
+  body .goTopBtn {
+    position: absolute;
+    right: 50px; }
+  body p.small {
+    font-size: 10px; }
+  body p.big {
+    font-size: 20px; } }
 
 @media screen and (min-width: 1025px) {
   body #logoAnimation path#_x31_ {
@@ -723,6 +794,7 @@ body {
     to {
       stroke-dashoffset: 0; } }
   body .loading {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -751,68 +823,120 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-  body .content {
-    display: none; }
-    body .content #intro {
-      background: url("../img/bg-cr.jpg") center bottom no-repeat;
-      background-size: 100% 100%; }
+  body .content section {
+    width: 100vw;
+    height: 100vh; }
+  body .content #intro {
+    background-color: #444;
+    background: url("../img/bg-cr.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #intro #pngLogo {
+      color: #fff; }
       body .content #intro #pngLogo img {
         width: auto;
         height: 95vh;
         position: absolute;
         right: 50%;
-        top: 0px;
+        top: 0;
         transform: translate(50%, -20%); }
-    body .content section {
-      width: 100vw;
-      height: 100vh; }
-      body .content section#solutions .slant-container {
-        width: 0;
-        height: 100%;
-        float: left; }
-        body .content section#solutions .slant-container .slant-white {
-          position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-white:after {
-            content: '';
+      body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
+        min-width: 100px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-weight: 200; }
+      body .content #intro #pngLogo .pe {
+        margin-right: -200px; }
+        body .content #intro #pngLogo .pe .big {
+          line-height: 5.5rem;
+          position: absolute;
+          font-size: 5.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .pe .big .small {
             position: absolute;
-            left: 100%;
-            top: 0;
-            border-top: 50vh solid #fff;
-            border-left: 0 solid #fff;
-            border-right: 50px solid transparent;
-            border-bottom: 50px solid transparent; }
-        body .content section#solutions .slant-container .slant-blue {
+            font-size: 1rem;
+            top: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .eng {
+        margin-right: 150px; }
+        body .content #intro #pngLogo .eng .big {
+          line-height: 5.5rem;
           position: relative;
-          width: 100%;
-          height: 50%; }
-          body .content section#solutions .slant-container .slant-blue:after {
-            content: '';
+          font-size: 4.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .eng .big .small {
             position: absolute;
-            right: 100%;
-            bottom: 0;
-            border-top: 50px solid transparent;
-            border-left: 50px solid transparent;
-            border-right: 0 solid transparent;
-            border-bottom: 50vh solid #339999; }
-      body .content section#solutions #web {
-        background-color: #fff;
-        height: 100%;
-        width: 50%;
-        float: left;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions #app {
-        background-color: #339999;
-        height: 100%;
-        width: 50%;
-        float: right;
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -ms-transition: all 0.5s ease-in;
-        -o-transition: all 0.5s ease-in;
-        transition: all 0.5s ease-in; }
-      body .content section#solutions .increaseWidth {
-        width: 55% !important; }
-      body .content section#solutions .decreaseWidth {
-        width: 45% !important; } }
+            font-size: 1rem;
+            bottom: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .goDownBtn {
+        bottom: 2vh; }
+  body .content #solutions .slant-container {
+    width: 0;
+    height: 100%;
+    float: left; }
+    body .content #solutions .slant-container .slant-white {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      body .content #solutions .slant-container .slant-white:after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 0;
+        border-top: 50vh solid #fff;
+        border-left: 0 solid #fff;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent; }
+    body .content #solutions .slant-container .slant-blue {
+      position: relative;
+      width: 100%;
+      height: 50%; }
+      body .content #solutions .slant-container .slant-blue:after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        border-top: 50px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 0 solid transparent;
+        border-bottom: 50vh solid #444; }
+  body .content #solutions #web {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    float: left;
+    transition: all 0.5s ease-in; }
+  body .content #solutions #app {
+    background-color: #444;
+    height: 100%;
+    width: 50%;
+    float: right;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+  body .content #solutions .increaseWidth {
+    width: 55% !important; }
+  body .content #solutions .decreaseWidth {
+    width: 45% !important; }
+  body .content #solutions .goDownBtn {
+    bottom: -98vh; }
+  body .content #solutions .goTopBtn {
+    bottom: -98vh; }
+  body .goDownBtn {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%); }
+  body .goTopBtn {
+    position: absolute;
+    right: 50px; }
+  body p.small {
+    font-size: 10px; }
+  body p.big {
+    font-size: 20px; } }
