@@ -1,16 +1,4 @@
 body {
-  @include drawSVG(#_x31_, 1000, 1000, 5s, 0s, linear);
-  @include drawSVG(#_x33_, 1000, 1000, 3s, 0.5s, linear);
-  @include drawSVG(#_x34_, 1000, 1000, 2s, 0.5s, linear);
-  @include drawSVG(#_x32_, 1000, 1000, 3s, 1.1s, linear);
-  @include drawSVG(#_x35_, 1000, 1000, 3s, 1s, linear);
-  @include drawSVG(#_x36_, 1000, 1000, 3s, 2.5s, linear);
-  @include drawSVG(#_x31_1, 1000, 1000, 3s, 2.7s, linear);
-  @include drawSVG(#_x37_, 1000, 1000, 3s, 2.7s, linear);
-  @include drawSVG(#_x38_, 1000, 1000, 3s, 2.8s, linear);
-  @include drawSVG(#_x39_, 1000, 1000, 3s, 3.1s, linear);
-  @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
-  @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
   .heightGTWidth{
     background-size: auto 100% !important;
@@ -19,7 +7,36 @@ body {
     background-size: 100% auto !important;
   }
   .loading {
-    display: none;
+
+    //draw loading SVG
+    @include drawSVG(#_x31_, 1000, 1000, 5s, 0s, linear);
+    @include drawSVG(#_x33_, 1000, 1000, 3s, 0.5s, linear);
+    @include drawSVG(#_x34_, 1000, 1000, 2s, 0.5s, linear);
+    @include drawSVG(#_x32_, 1000, 1000, 3s, 1.1s, linear);
+    @include drawSVG(#_x35_, 1000, 1000, 3s, 1s, linear);
+    @include drawSVG(#_x36_, 1000, 1000, 3s, 2.5s, linear);
+    @include drawSVG(#_x31_1, 1000, 1000, 3s, 2.7s, linear);
+    @include drawSVG(#_x37_, 1000, 1000, 3s, 2.7s, linear);
+    @include drawSVG(#_x38_, 1000, 1000, 3s, 2.8s, linear);
+    @include drawSVG(#_x39_, 1000, 1000, 3s, 3.1s, linear);
+    @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
+    @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
+
+    //reverse of drawing loading SVG
+    //@include drawSVGReverse(#_x31_, 1000, 1000, 5s, 0s, linear);
+    //@include drawSVGReverse(#_x33_, 1000, 1000, 3s, 0.5s, linear);
+    //@include drawSVGReverse(#_x34_, 1000, 1000, 2s, 0.5s, linear);
+    //@include drawSVGReverse(#_x32_, 1000, 1000, 3s, 1.1s, linear);
+    //@include drawSVGReverse(#_x35_, 1000, 1000, 3s, 1s, linear);
+    //@include drawSVGReverse(#_x36_, 1000, 1000, 3s, 2.5s, linear);
+    //@include drawSVGReverse(#_x31_1, 1000, 1000, 3s, 2.7s, linear);
+    //@include drawSVGReverse(#_x37_, 1000, 1000, 3s, 2.7s, linear);
+    //@include drawSVGReverse(#_x38_, 1000, 1000, 3s, 2.8s, linear);
+    //@include drawSVGReverse(#_x39_, 1000, 1000, 3s, 3.1s, linear);
+    //@include drawSVGReverse(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
+    //@include drawSVGReverse(#_x31_2, 1000, 1000, 5s, 9s, ease-out);
+
+    //display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +70,7 @@ body {
   }
 
   .content {
-    //display: none;
+    display: none;
     section {
       width: 100vw;
       height: 100vh;

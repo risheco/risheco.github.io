@@ -1,7 +1,7 @@
-// $(window).ready(setTimeout(function () {
-//     $(".loading").fadeOut(600);
-//     $(".content").css({"display": "block"});
-// }, 6000));
+$(window).ready(setTimeout(function () {
+    $(".loading").fadeOut(600);
+    $(".content").css({"display": "block"});
+}, 6000));
 
 function hoverLeft() {
 //     // alert('aaa');
