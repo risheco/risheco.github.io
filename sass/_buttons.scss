@@ -11,8 +11,8 @@
   @include button($orange, orange);
   @include button($gray, gray);
   &.small {
-    min-width: 50px;
-    width: 50px;
+    min-width: 40px;
+    width: 40px;
   }
   &:focus{
     outline:none;
