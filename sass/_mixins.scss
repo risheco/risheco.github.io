@@ -37,11 +37,11 @@
     }
   }
 }
-@mixin drawSVGReverse($id,$length,$speed,$duration,$delay) {
+@mixin drawSVGReverse($id,$length,$speed,$duration,$delay,$style) {
   path#{$id} {
     stroke-dasharray: $speed;
     stroke-dashoffset: $length;
-    animation: dash $duration linear forwards $delay;
+    animation: dash $duration $style reverse $delay;
   }
 
   @keyframes dash {
