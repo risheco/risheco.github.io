@@ -573,23 +573,18 @@ body {
       opacity: 1; } }
   body .content {
     display: none; }
-    body .content #intro .logo {
-      float: right;
-      width: 50%;
-      height: 100%; }
-      body .content #intro .logo .logoSvg {
-        width: 40%;
-        height: auto;
+    body .content #intro {
+      background: url("../img/bg-cr.jpg") center bottom no-repeat;
+      background-size: 100% 100%; }
+      body .content #intro #pngLogo img {
+        width: auto;
+        height: 95vh;
         position: absolute;
-        margin-left: -200px;
-        top: 0;
-        right: 50px; }
-    body .content #intro #introduction {
-      float: left;
-      width: 50%;
-      height: 100%; }
+        right: 50%;
+        top: 0px;
+        transform: translate(50%, -20%); }
     body .content section {
-      width: 100vm;
+      width: 100vw;
       height: 100vh; }
       body .content section#solutions .slant-container {
         width: 0;
@@ -758,23 +753,18 @@ body {
       opacity: 1; } }
   body .content {
     display: none; }
-    body .content #intro .logo {
-      float: right;
-      width: 50%;
-      height: 100%; }
-      body .content #intro .logo .logoSvg {
-        width: 40%;
-        height: auto;
+    body .content #intro {
+      background: url("../img/bg-cr.jpg") center bottom no-repeat;
+      background-size: 100% 100%; }
+      body .content #intro #pngLogo img {
+        width: auto;
+        height: 95vh;
         position: absolute;
-        margin-left: -200px;
-        top: 0;
-        right: 50px; }
-    body .content #intro #introduction {
-      float: left;
-      width: 50%;
-      height: 100%; }
+        right: 50%;
+        top: 0px;
+        transform: translate(50%, -20%); }
     body .content section {
-      width: 100vm;
+      width: 100vw;
       height: 100vh; }
       body .content section#solutions .slant-container {
         width: 0;
