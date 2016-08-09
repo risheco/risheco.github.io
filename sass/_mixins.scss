@@ -58,8 +58,8 @@
     border: 2px solid $color;
     background-color: transparent;
     &:hover {
-      border: 2px solid darken($color,5%);
-      color: darken($color,5%);
+      border: 2px solid darken($color,20%);
+      color: darken($color,20%);
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;

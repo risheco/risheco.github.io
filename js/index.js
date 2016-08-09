@@ -1,7 +1,7 @@
-// $(window).ready(setTimeout(function () {
-//     $(".loading").fadeOut(600);
-//     $(".content").css({"display": "block"});
-// }, 6000));
+$(window).ready(setTimeout(function () {
+    $(".loading").fadeOut(600);
+    $(".content").css({"display": "block"});
+}, 6000));
 
 function hoverLeft() {
 //     // alert('aaa');
@@ -10,8 +10,10 @@ function hoverLeft() {
 //     $(".slant-container").css({"margin-left": "5%"});
     $("#web").removeClass("decreaseWidth");
     $("#web").addClass("increaseWidth");
+    // $("#web.web-content").addClass("scaled");
     $("#app").removeClass("increaseWidth");
     $("#app").addClass("decreaseWidth");
+    // $("#app.app-content").removeClass("scaled");
 };
 function hoverRight() {
 //     // alert('aaa');
@@ -20,6 +22,8 @@ function hoverRight() {
 //     $(".slant-container").css({"margin-right": "5%"});
     $("#app").removeClass("decreaseWidth");
     $("#app").addClass("increaseWidth");
+    // $("#app.app-content").addClass("scaled");
     $("#web").removeClass("increaseWidth");
     $("#web").addClass("decreaseWidth");
+    // $("#web.web-content").removeClass("scaled");
 };

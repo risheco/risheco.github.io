@@ -13,7 +13,7 @@ body {
   @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
   .loading {
-    display: none;
+    //display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ body {
   }
 
   .content {
-    //display: none;
+    display: none;
     section {
       width: 100vw;
       height: 100vh;
@@ -113,6 +113,103 @@ body {
       }
     }
     #solutions {
+      #web {
+        .web-content {
+          color: $gray;
+          position: relative;
+          top: 10vh;
+          left: 0;
+          &.scaled {
+            transform: scale(1.1);
+          }
+          svg {
+            position: absolute;
+            height: 300px;
+            width: auto;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            &:first-child {
+              height: 120px;
+              width: auto;
+              top: 20px;
+              left: 45%;
+            }
+          }
+          p {
+            &.title {
+              width: 100%;
+              text-align: center;
+              position: absolute;
+              top: calc(10vh + 250px);
+              right: 50%;
+              transform: translateX(50%);
+              font-size: 1.5rem;
+              color: $blue;
+            }
+            &.text {
+              width: 500px;
+              text-align: justify;
+              position: absolute;
+              top: calc(10vh + 320px);
+              right: 50%;
+              transform: translateX(50%);
+              color: $gray;
+              font-size: 1rem;
+
+            }
+          }
+        }
+      }
+      #app {
+        .app-content {
+          color: $white;
+          position: relative;
+          top: 10vh;
+          svg {
+            position: absolute;
+            height: 300px;
+            width: auto;
+            right: 50%;
+            -webkit-transform: translateX(50%);
+            -moz-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            -o-transform: translateX(50%);
+            transform: translateX(50%);
+            &:first-child {
+              height: 85px;
+              width: auto;
+              top: 32px;
+            }
+          }
+          p {
+            &.title {
+              width: 100%;
+              text-align: center;
+              position: absolute;
+              top: calc(10vh + 250px);
+              right: 50%;
+              transform: translateX(50%);
+              font-size: 1.5rem;
+              color: $orange;
+            }
+            &.text {
+              width: 500px;
+              text-align: justify;
+              position: absolute;
+              top: calc(10vh + 320px);
+              right: 50%;
+              transform: translateX(50%);
+              color: $white;
+              font-size: 1rem;
+
+            }
+          }
+        }
+      }
       .slant-container {
         width: 0;
         height: 100%;
@@ -175,9 +272,6 @@ body {
       .goDownBtn {
         bottom: -98vh;
       }
-      .goTopBtn {
-        bottom: -98vh;
-      }
     }
     #member {
     }
@@ -189,8 +283,9 @@ body {
     transform: translateX(50%);
   }
   .goTopBtn {
-    position: absolute;
+    position: fixed;
     right: 50px;
+    bottom: 2vh;
   }
 
   p {
@@ -201,5 +296,6 @@ body {
       font-size: 20px
     }
   }
+
 }
 
