@@ -25,5 +25,16 @@ function hoverRight() {
     // $("#app.app-content").addClass("scaled");
     $("#web").removeClass("increaseWidth");
     $("#web").addClass("decreaseWidth");
-    // $("#web.web-content").removeClass("scaled");
 };
+
+// var windowHeight = $(window).height();
+// var windowWidth = $(window).width();
+// if(windowHeight<=windowWidth){
+//     $("body .content #intro").addClass("widthGTHeight");
+//     // $("body .content #intro").css({backgroundSize:'100% auto'});
+// }
+//
+// if(windowHeight>windowWidth){
+//     $("body .content #intro").addClass("heightGTWidth");
+//     // $("body .content #intro").css({backgroundSize:'auto 100% !important'});
+// }

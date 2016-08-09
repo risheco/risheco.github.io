@@ -560,6 +560,10 @@ body {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+  body .heightGTWidth {
+    background-size: auto 100% !important; }
+  body .widthGTHeight {
+    background-size: 100% auto !important; }
   body .loading {
     position: fixed;
     top: 0;
@@ -869,6 +873,10 @@ body {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+  body .heightGTWidth {
+    background-size: auto 100% !important; }
+  body .widthGTHeight {
+    background-size: 100% auto !important; }
   body .loading {
     position: fixed;
     top: 0;

@@ -12,6 +12,12 @@ body {
   @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
   @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
+  .heightGTWidth{
+    background-size: auto 100% !important;
+  }
+  .widthGTHeight{
+    background-size: 100% auto !important;
+  }
   .loading {
     //display: none;
     position: fixed;
