@@ -5,10 +5,22 @@
   width: auto;
   height:35px;
   line-height: 35px;
-  padding: 10px;
   text-align: center;
   @include button($white, white);
   @include button($blue, blue);
   @include button($orange, orange);
   @include button($gray, gray);
+  &.small {
+    min-width: 50px;
+    width: 50px;
+  }
+  &:focus{
+    outline:none;
+  }
+  i {
+    //line-height: 35px !important;
+    &:focus{
+      outline: none;
+    }
+  }
 }

@@ -19,6 +19,7 @@ body {
     background-size: 100% auto !important;
   }
   .loading {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,88 +53,158 @@ body {
   }
 
   .content {
-    display: none;
-    #intro {
-      background: url("../img/bg-cr.jpg") center bottom no-repeat;
-      background-size: 100% 100%;
-      #pngLogo {
-        img {
-          //min-width:240px;
-          width: auto;
-          //max-height: 95vh;
-          height:95vh;
-          position: absolute;
-          right:50%;
-          //margin-right: -50%;
-          top:0px;
-          transform: translate(50%,-20%);
-        }
-      }
-    }
+    //display: none;
     section {
       width: 100vw;
       height: 100vh;
-      &#solutions {
-        .slant-container {
-          width: 0;
-          height: 100%;
-          float: left;
-          .slant-white {
-            position: relative;
-            width: 100%;
-            height: 50%;
-            &:after {
-              content: '';
+    }
+    #intro {
+      background-color: $gray;
+      background: url("../img/bg-cr.jpg") center bottom no-repeat;
+      background-size: 100% 100%;
+      #pngLogo {
+        color: $white;
+        img {
+          width: auto;
+          height: 95vh;
+          position: absolute;
+          right: 50%;
+          top: 0;
+          transform: translate(50%, -20%);
+        }
+        .pe, .eng {
+          min-width: 100px;
+          position: absolute;
+          right: 50%;
+          transform: translateX(50%);
+          font-weight: 200;
+        }
+        .pe {
+          margin-right: -200px;
+          .big {
+            line-height: 5.5rem;
+            position: absolute;
+            font-size: 5.5rem;
+            top: 23vh;
+            margin: 0;
+            .small {
               position: absolute;
-              left: 100%;
-              top: 0;
-              border: {
-                top: 50vh solid $white;
-                left: 0 solid $white;
-                right: 50px solid transparent;
-                bottom: 50px solid transparent;
-              }
+              font-size: 1rem;
+              top: -20px;
+              margin: 0;
+              line-height: 1rem;
             }
           }
-          .slant-blue {
+        }
+        .eng {
+          margin-right: 150px;
+          .big {
+            line-height: 5.5rem;
             position: relative;
-            width: 100%;
-            height: 50%;
-            &:after {
-              content: '';
+            font-size: 4.5rem;
+            top: 23vh;
+            margin: 0;
+            .small {
               position: absolute;
-              right: 100%;
-              bottom: 0;
-              border: {
-                top: 50px solid transparent;
-                left: 50px solid transparent;
-                right: 0 solid transparent;
-                bottom: 50vh solid $blue;
-              }
+              font-size: 1rem;
+              bottom: -20px;
+              margin: 0;
+              line-height: 1rem;
             }
           }
         }
-        #web {
-          background-color: $white;
-          height: 100%;
-          width: 50%;
-          float: left;
-          transition: all 0.5s ease-in;
-        }
-        #app {
-          background-color: $blue;
-          height: 100%;
-          width: 50%;
-          float: right;
-          @include transition(all 0.5s ease-in);
-        }
-        .increaseWidth {
-          width: 55% !important;
-        }
-        .decreaseWidth {
-          width: 45% !important;
+        .goDownBtn {
+          bottom: 2vh;
         }
       }
+    }
+    #solutions {
+      .slant-container {
+        width: 0;
+        height: 100%;
+        float: left;
+        .slant-white {
+          position: relative;
+          width: 100%;
+          height: 50%;
+          &:after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 0;
+            border: {
+              top: 50vh solid $white;
+              left: 0 solid $white;
+              right: 50px solid transparent;
+              bottom: 50px solid transparent;
+            }
+          }
+        }
+        .slant-blue {
+          position: relative;
+          width: 100%;
+          height: 50%;
+          &:after {
+            content: '';
+            position: absolute;
+            right: 100%;
+            bottom: 0;
+            border: {
+              top: 50px solid transparent;
+              left: 50px solid transparent;
+              right: 0 solid transparent;
+              bottom: 50vh solid $gray;
+            }
+          }
+        }
+      }
+      #web {
+        background-color: $white;
+        height: 100%;
+        width: 50%;
+        float: left;
+        transition: all 0.5s ease-in;
+      }
+      #app {
+        background-color: $gray;
+        height: 100%;
+        width: 50%;
+        float: right;
+        @include transition(all 0.5s ease-in);
+      }
+      .increaseWidth {
+        width: 55% !important;
+      }
+      .decreaseWidth {
+        width: 45% !important;
+      }
+      .goDownBtn {
+        bottom: -98vh;
+      }
+      .goTopBtn {
+        bottom: -98vh;
+      }
+    }
+    #member {
+    }
+  }
+
+  .goDownBtn {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .goTopBtn {
+    position: absolute;
+    right: 50px;
+  }
+
+  p {
+    &.small {
+      font-size: 10px;
+    }
+    &.big {
+      font-size: 20px
     }
   }
 }
