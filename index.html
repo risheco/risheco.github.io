@@ -340,6 +340,20 @@
 </svg>
 </div>
 <div class="content">
+	<div class="sectionChanger">
+		<div class="verticalLine"></div>
+		<input id="goToIntro" type="radio" name="field" value="option" onclick="window.location='#intro';">
+		<label for="goToIntro"><span><span><span>ریشه</span></span></span></label>
+
+		<input id="goToSolutions" type="radio" name="field" value="option" onclick="window.location='#solutions';">
+		<label for="goToSolutions"><span><span><span>راهکارها</span></span></span></label>
+
+		<input id="goToMembers" type="radio" name="field" value="option" onclick="window.location='#members';">
+		<label for="goToMembers"><span><span><span>اعضا</span></span></span></label>
+
+		<input id="goToAbout" type="radio" name="field" value="option" onclick="window.location='#about';">
+		<label for="goToAbout"><span><span><span>درباره</span></span></span></label>
+	</div>
     <section id="intro">
         <div id="pngLogo">
             <div class="pe">
@@ -872,6 +886,7 @@
     </section>
     <section id="members">
     </section>
+	<section id="about"></section>
 	<a href="#intro" type="button" class="button small orange goTopBtn"><i
 			class="fa fa-chevron-up "></i>
 	</a>
