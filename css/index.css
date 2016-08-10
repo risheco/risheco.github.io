@@ -902,9 +902,39 @@ body {
                   cursor: pointer; }
                   body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                     color: #ff9933; }
+    body .content #members .addUser {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      margin-bottom: -240px;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%);
+      width: 105px;
+      height: 45px; }
+      body .content #members .addUser:hover span {
+        color: #267373 !important;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      body .content #members .addUser span {
+        color: #339999 !important;
+        font-family: "iransans";
+        line-height: 40px;
+        padding: 5px;
+        font-size: 1.5rem;
+        display: inline;
+        text-align: center; }
+      body .content #members .addUser i {
+        line-height: 40px; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
+    bottom: 2vh;
     transform: translateX(50%); }
   body .goTopBtn {
     position: fixed;
@@ -933,11 +963,13 @@ body {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      opacity: 0; }
+      opacity: 0;
+      cursor: pointer; }
     body .sectionChanger input[type=radio]:not(old) + label {
       display: inline-block;
       margin-left: -2em;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      cursor: pointer; }
     body .sectionChanger input[type=radio]:not(old) + label > span {
       display: inline-block;
       width: 0.7em;
@@ -1392,9 +1424,39 @@ body {
                   cursor: pointer; }
                   body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                     color: #ff9933; }
+    body .content #members .addUser {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      margin-bottom: -240px;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%);
+      width: 105px;
+      height: 45px; }
+      body .content #members .addUser:hover span {
+        color: #267373 !important;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      body .content #members .addUser span {
+        color: #339999 !important;
+        font-family: "iransans";
+        line-height: 40px;
+        padding: 5px;
+        font-size: 1.5rem;
+        display: inline;
+        text-align: center; }
+      body .content #members .addUser i {
+        line-height: 40px; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
+    bottom: 2vh;
     transform: translateX(50%); }
   body .goTopBtn {
     position: fixed;
@@ -1423,11 +1485,13 @@ body {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      opacity: 0; }
+      opacity: 0;
+      cursor: pointer; }
     body .sectionChanger input[type=radio]:not(old) + label {
       display: inline-block;
       margin-left: -2em;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      cursor: pointer; }
     body .sectionChanger input[type=radio]:not(old) + label > span {
       display: inline-block;
       width: 0.7em;

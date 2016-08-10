@@ -463,12 +463,46 @@ body {
           }
         }
       }
+      .addUser {
+        position: absolute;
+        bottom:50%;
+        right:50%;
+        margin-bottom: -240px;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        transform: translateX(50%);
+        width: 105px;
+        height: 45px;
+        &:hover span{
+          color: darken($blue,10%) !important;
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+          -ms-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
+          transition: all ease 0.5s;
+        }
+        span{
+          color: $blue !important;
+          font-family: "iransans";
+          line-height: 40px;
+          padding: 5px;
+          font-size: 1.5rem;
+          display: inline;
+          text-align: center;
+        }
+        i {
+          line-height: 40px;
+        }
+      }
     }
   }
 
   .goDownBtn {
     position: absolute;
     right: 50%;
+    bottom:2vh;
     transform: translateX(50%);
   }
   .goTopBtn {
@@ -508,11 +542,13 @@ body {
       padding: 0;
       font-size: 1em;
       opacity: 0;
+      cursor: pointer;
     }
     input[type=radio]:not(old) + label {
       display: inline-block;
       margin-left: -2em;
       line-height: 1.5em;
+      cursor: pointer;
     }
     input[type=radio]:not(old) + label > span {
       display: inline-block;
