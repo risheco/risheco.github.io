@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/animation.css">
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/index.js"></script>
+
 </head>
 <body>
 <div class="loading">
@@ -340,6 +340,20 @@
 </svg>
 </div>
 <div class="content">
+	<div class="sectionChanger">
+		<div class="verticalLine"></div>
+		<input id="goToIntro" type="radio" name="field" value="option" onclick="window.location='#intro';">
+		<label for="goToIntro"><span><span><span>ریشه</span></span></span></label>
+
+		<input id="goToSolutions" type="radio" name="field" value="option" onclick="window.location='#solutions';">
+		<label for="goToSolutions"><span><span><span>راهکارها</span></span></span></label>
+
+		<input id="goToMembers" type="radio" name="field" value="option" onclick="window.location='#members';">
+		<label for="goToMembers"><span><span><span>اعضا</span></span></span></label>
+
+		<input id="goToAbout" type="radio" name="field" value="option" onclick="window.location='#about';">
+		<label for="goToAbout"><span><span><span>درباره</span></span></span></label>
+	</div>
     <section id="intro">
         <div id="pngLogo">
             <div class="pe">
@@ -871,11 +885,208 @@
         </a>
     </section>
     <section id="members">
+		<p class="memberTitle">ریشه ایها</p>
+		<ul class="membersList">
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/amin.jpg">
+				</div>
+				<div class="memberInfo leftInfo">
+					<div class="memeberImg">
+						<img src="img/developers/amin.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name">محمد امین مسعودی</p>
+							<p class="skill">طراح وب</p>
+							<p class="quote"><i class="fa fa-quote-right"></i> به ریش نیس به ریشه ست به ریش نیس به ریشه ست به ریش نیس به ریشه ست به ریش نیس به ریشه ست به ریش نیس به ریشه ست <i class="fa fa-quote-left"></i> </p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/kian.jpg">
+				</div>
+				<div class="memberInfo leftInfo">
+					<div class="memeberImg">
+						<img src="img/developers/kian.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/salar.jpg">
+				</div>
+				<div class="memberInfo rightInfo">
+					<div class="memeberImg">
+						<img src="img/developers/salar.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/amir.jpg">
+				</div>
+				<div class="memberInfo rightInfo">
+					<div class="memeberImg">
+						<img src="img/developers/amir.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name">امیرمحمد مرادی</p>
+							<p class="skill">توسعه دهنده رابط کاربری وبسایت</p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/meraj.jpg">
+				</div>
+				<div class="memberInfo leftInfo">
+					<div class="memeberImg">
+						<img src="img/developers/meraj.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/negar.jpg">
+				</div>
+				<div class="memberInfo leftInfo">
+					<div class="memeberImg">
+						<img src="img/developers/negar.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/hamid.jpg">
+				</div>
+				<div class="memberInfo rightInfo">
+					<div class="memeberImg">
+						<img src="img/developers/hamid.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="member">
+				<div class="memeberImg">
+					<img src="img/developers/bardia.jpg">
+				</div>
+				<div class="memberInfo rightInfo">
+					<div class="memeberImg">
+						<img src="img/developers/bardia.jpg">
+					</div>
+					<div class="Info">
+						<div class="text">
+							<p class="name"></p>
+							<p class="skill"></p>
+							<p class="quote"></p>
+						</div>
+						<ul class="memberSocials">
+							<li><i class="fa fa-linkedin"></i> </li>
+							<li><i class="fa fa-twitter"></i> </li>
+							<li><i class="fa fa-facebook"></i> </li>
+							<li><i class="fa fa-github"></i> </li>
+							<li><i class="fa fa-stack-overflow"></i> </li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
     </section>
+	<section id="about"></section>
 	<a href="#intro" type="button" class="button small orange goTopBtn"><i
 			class="fa fa-chevron-up "></i>
 	</a>
 </div>
 <script src="js/background.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

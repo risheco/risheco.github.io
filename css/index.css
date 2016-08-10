@@ -565,6 +565,7 @@ body {
     to {
       stroke-dashoffset: 0; } }
   body .loading {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -593,60 +594,62 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-  body .content {
-    display: none; }
-    body .content section {
-      width: 100vw;
-      height: 100vh; }
-    body .content #intro {
-      background-color: #444;
-      background: url("../img/bg-cr.jpg") center bottom no-repeat;
-      background-size: 100% 100%; }
-      body .content #intro #pngLogo {
-        color: #fff; }
-        body .content #intro #pngLogo img {
-          width: auto;
-          height: 95vh;
+  body .content section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  body .content #intro {
+    position: relative;
+    background-color: #444;
+    background: url("../img/bg-cr.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #intro #pngLogo {
+      color: #fff; }
+      body .content #intro #pngLogo img {
+        width: auto;
+        height: 95vh;
+        position: absolute;
+        right: 50%;
+        top: 0;
+        transform: translate(50%, -20%); }
+      body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
+        min-width: 100px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-weight: 200; }
+      body .content #intro #pngLogo .pe {
+        margin-right: -200px; }
+        body .content #intro #pngLogo .pe .big {
+          line-height: 5.5rem;
           position: absolute;
-          right: 50%;
-          top: 0;
-          transform: translate(50%, -20%); }
-        body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
-          min-width: 100px;
-          position: absolute;
-          right: 50%;
-          transform: translateX(50%);
-          font-weight: 200; }
-        body .content #intro #pngLogo .pe {
-          margin-right: -200px; }
-          body .content #intro #pngLogo .pe .big {
-            line-height: 5.5rem;
+          font-size: 5.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .pe .big .small {
             position: absolute;
-            font-size: 5.5rem;
-            top: 23vh;
-            margin: 0; }
-            body .content #intro #pngLogo .pe .big .small {
-              position: absolute;
-              font-size: 1rem;
-              top: -20px;
-              margin: 0;
-              line-height: 1rem; }
-        body .content #intro #pngLogo .eng {
-          margin-right: 150px; }
-          body .content #intro #pngLogo .eng .big {
-            line-height: 5.5rem;
-            position: relative;
-            font-size: 4.5rem;
-            top: 23vh;
-            margin: 0; }
-            body .content #intro #pngLogo .eng .big .small {
-              position: absolute;
-              font-size: 1rem;
-              bottom: -20px;
-              margin: 0;
-              line-height: 1rem; }
-        body .content #intro #pngLogo .goDownBtn {
-          bottom: 2vh; }
+            font-size: 1rem;
+            top: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .eng {
+        margin-right: 150px; }
+        body .content #intro #pngLogo .eng .big {
+          line-height: 5.5rem;
+          position: relative;
+          font-size: 4.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .eng .big .small {
+            position: absolute;
+            font-size: 1rem;
+            bottom: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .goDownBtn {
+        bottom: 2vh; }
+  body .content #solutions {
+    position: relative; }
     body .content #solutions #web .web-content {
       color: #444;
       position: relative;
@@ -679,7 +682,7 @@ body {
         font-size: 1.5rem;
         color: #339999; }
       body .content #solutions #web .web-content p.text {
-        width: 500px;
+        width: 400px;
         text-align: justify;
         position: absolute;
         top: calc(10vh + 320px);
@@ -715,14 +718,15 @@ body {
         font-size: 1.5rem;
         color: #ff9933; }
       body .content #solutions #app .app-content p.text {
-        width: 500px;
+        width: 400px;
         text-align: justify;
         position: absolute;
         top: calc(10vh + 320px);
         right: 50%;
         transform: translateX(50%);
         color: #fff;
-        font-size: 1rem; }
+        font-size: 1rem;
+        max-height: 150px; }
     body .content #solutions .slant-container {
       width: 0;
       height: 100%;
@@ -776,19 +780,190 @@ body {
     body .content #solutions .decreaseWidth {
       width: 45% !important; }
     body .content #solutions .goDownBtn {
-      bottom: -98vh; }
+      bottom: 2vh; }
+  body .content #members {
+    position: relative;
+    background: url("../img/m-bg.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #members li {
+      display: inline-block; }
+    body .content #members .memberTitle {
+      position: absolute;
+      font-size: 2.5rem;
+      color: #fff;
+      word-spacing: -8px;
+      right: 50%;
+      top: 50%;
+      margin-top: -280px;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%); }
+    body .content #members ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      body .content #members ul.membersList {
+        position: absolute;
+        width: 715px;
+        top: 50%;
+        right: 50%;
+        -webkit-transform: translate(50%, -50%);
+        -moz-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, 50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%); }
+        body .content #members ul.membersList .member {
+          position: relative;
+          width: calc(660px/4);
+          height: calc(660px/4);
+          margin: 5px; }
+          body .content #members ul.membersList .member > .memeberImg {
+            width: calc(100% - 3px);
+            height: calc(100% - 3px);
+            border: 3px solid #ff9933 !important;
+            background-color: #ff9933; }
+            body .content #members ul.membersList .member > .memeberImg img {
+              opacity: 0.9;
+              width: 100%;
+              height: 100%;
+              -webkit-filter: grayscale(90%);
+              /* Chrome, Safari, Opera */
+              filter: grayscale(90%); }
+          body .content #members ul.membersList .member .memberInfo {
+            z-index: 100;
+            display: none;
+            position: absolute;
+            width: calc(300% + 30px);
+            height: 100%;
+            padding: 10px;
+            box-sizing: content-box;
+            background-color: #339999; }
+            body .content #members ul.membersList .member .memberInfo.rightInfo {
+              top: -10px;
+              left: -10px; }
+              body .content #members ul.membersList .member .memberInfo.rightInfo .memeberImg {
+                float: left; }
+              body .content #members ul.membersList .member .memberInfo.rightInfo .Info {
+                float: right; }
+            body .content #members ul.membersList .member .memberInfo.leftInfo {
+              top: -10px;
+              right: -10px; }
+              body .content #members ul.membersList .member .memberInfo.leftInfo .memeberImg {
+                float: right; }
+              body .content #members ul.membersList .member .memberInfo.leftInfo .Info {
+                float: left; }
+            body .content #members ul.membersList .member .memberInfo .memeberImg {
+              width: calc(660px/4);
+              height: calc(660px/4); }
+              body .content #members ul.membersList .member .memberInfo .memeberImg img {
+                width: calc(100% - 3px);
+                height: calc(100% - 3px);
+                border: 3px solid #339999; }
+            body .content #members ul.membersList .member .memberInfo .Info {
+              height: 100%;
+              width: calc(100% - 660px / 4 - 5px); }
+              body .content #members ul.membersList .member .memberInfo .Info .text {
+                width: 100%;
+                color: #fff;
+                height: calc(100% - 30px - 10px);
+                margin-top: 5px;
+                margin-bottom: 0; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .name {
+                  font-size: 1.1rem;
+                  border-right: solid 5px #ff9933;
+                  padding-right: 15px !important;
+                  margin-right: 5px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .skill {
+                  font-size: 0.9rem;
+                  margin-bottom: 10px !important;
+                  border-right: solid 5px #ff9933;
+                  padding-right: 15px !important;
+                  margin-right: 5px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .quote {
+                  font-size: 0.8rem;
+                  font-style: italic;
+                  font-weight: 200;
+                  margin-right: 5px !important; }
+                  body .content #members ul.membersList .member .memberInfo .Info .text .quote i {
+                    color: #ff9933;
+                    margin: 5px 0px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text p {
+                  margin: 0 !important; }
+              body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials {
+                text-align: center; }
+                body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li {
+                  margin: 5px;
+                  width: 30px;
+                  height: 30px;
+                  color: #fff;
+                  transition: all 0.5s;
+                  cursor: pointer; }
+                  body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
+                    color: #ff9933; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
     transform: translateX(50%); }
   body .goTopBtn {
     position: fixed;
-    right: 50px;
-    bottom: 2vh; }
+    right: 2%;
+    bottom: 2vh;
+    display: none; }
   body p.small {
     font-size: 10px; }
   body p.big {
-    font-size: 20px; } }
+    font-size: 20px; }
+  body .sectionChanger {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    color: #fff;
+    z-index: 9999; }
+    body .sectionChanger input {
+      display: block; }
+    body .sectionChanger .verticalLine {
+      border-left: 2px solid #fff; }
+    body .sectionChanger input[type=radio]:not(old) {
+      width: 2em;
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      opacity: 0; }
+    body .sectionChanger input[type=radio]:not(old) + label {
+      display: inline-block;
+      margin-left: -2em;
+      line-height: 1.5em; }
+    body .sectionChanger input[type=radio]:not(old) + label > span {
+      display: inline-block;
+      width: 0.7em;
+      height: 0.7em;
+      margin: 0.25em 0.5em 0.25em 0.25em;
+      border-radius: 60px;
+      background-color: #fff;
+      vertical-align: bottom; }
+    body .sectionChanger input[type=radio]:not(old):checked + label > span {
+      -webkit-transform: scale(1.7);
+      -moz-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+      -o-transform: scale(1.7);
+      transform: scale(1.7); }
+    body .sectionChanger input[type=radio]:not(old):checked + label > span > span > span {
+      position: absolute;
+      bottom: 50%;
+      right: 20px;
+      font-size: 10px;
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+      transform: translateY(50%); }
+    body .sectionChanger input[type=radio]:not(:checked) + label > span > span > span {
+      display: none; } }
 
 @media screen and (min-width: 1025px) {
   body .heightGTWidth {
@@ -880,6 +1055,7 @@ body {
     to {
       stroke-dashoffset: 0; } }
   body .loading {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -908,60 +1084,62 @@ body {
       opacity: 0; }
     to {
       opacity: 1; } }
-  body .content {
-    display: none; }
-    body .content section {
-      width: 100vw;
-      height: 100vh; }
-    body .content #intro {
-      background-color: #444;
-      background: url("../img/bg-cr.jpg") center bottom no-repeat;
-      background-size: 100% 100%; }
-      body .content #intro #pngLogo {
-        color: #fff; }
-        body .content #intro #pngLogo img {
-          width: auto;
-          height: 95vh;
+  body .content section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  body .content #intro {
+    position: relative;
+    background-color: #444;
+    background: url("../img/bg-cr.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #intro #pngLogo {
+      color: #fff; }
+      body .content #intro #pngLogo img {
+        width: auto;
+        height: 95vh;
+        position: absolute;
+        right: 50%;
+        top: 0;
+        transform: translate(50%, -20%); }
+      body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
+        min-width: 100px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-weight: 200; }
+      body .content #intro #pngLogo .pe {
+        margin-right: -200px; }
+        body .content #intro #pngLogo .pe .big {
+          line-height: 5.5rem;
           position: absolute;
-          right: 50%;
-          top: 0;
-          transform: translate(50%, -20%); }
-        body .content #intro #pngLogo .pe, body .content #intro #pngLogo .eng {
-          min-width: 100px;
-          position: absolute;
-          right: 50%;
-          transform: translateX(50%);
-          font-weight: 200; }
-        body .content #intro #pngLogo .pe {
-          margin-right: -200px; }
-          body .content #intro #pngLogo .pe .big {
-            line-height: 5.5rem;
+          font-size: 5.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .pe .big .small {
             position: absolute;
-            font-size: 5.5rem;
-            top: 23vh;
-            margin: 0; }
-            body .content #intro #pngLogo .pe .big .small {
-              position: absolute;
-              font-size: 1rem;
-              top: -20px;
-              margin: 0;
-              line-height: 1rem; }
-        body .content #intro #pngLogo .eng {
-          margin-right: 150px; }
-          body .content #intro #pngLogo .eng .big {
-            line-height: 5.5rem;
-            position: relative;
-            font-size: 4.5rem;
-            top: 23vh;
-            margin: 0; }
-            body .content #intro #pngLogo .eng .big .small {
-              position: absolute;
-              font-size: 1rem;
-              bottom: -20px;
-              margin: 0;
-              line-height: 1rem; }
-        body .content #intro #pngLogo .goDownBtn {
-          bottom: 2vh; }
+            font-size: 1rem;
+            top: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .eng {
+        margin-right: 150px; }
+        body .content #intro #pngLogo .eng .big {
+          line-height: 5.5rem;
+          position: relative;
+          font-size: 4.5rem;
+          top: 23vh;
+          margin: 0; }
+          body .content #intro #pngLogo .eng .big .small {
+            position: absolute;
+            font-size: 1rem;
+            bottom: -20px;
+            margin: 0;
+            line-height: 1rem; }
+      body .content #intro #pngLogo .goDownBtn {
+        bottom: 2vh; }
+  body .content #solutions {
+    position: relative; }
     body .content #solutions #web .web-content {
       color: #444;
       position: relative;
@@ -994,7 +1172,7 @@ body {
         font-size: 1.5rem;
         color: #339999; }
       body .content #solutions #web .web-content p.text {
-        width: 500px;
+        width: 400px;
         text-align: justify;
         position: absolute;
         top: calc(10vh + 320px);
@@ -1030,14 +1208,15 @@ body {
         font-size: 1.5rem;
         color: #ff9933; }
       body .content #solutions #app .app-content p.text {
-        width: 500px;
+        width: 400px;
         text-align: justify;
         position: absolute;
         top: calc(10vh + 320px);
         right: 50%;
         transform: translateX(50%);
         color: #fff;
-        font-size: 1rem; }
+        font-size: 1rem;
+        max-height: 150px; }
     body .content #solutions .slant-container {
       width: 0;
       height: 100%;
@@ -1091,16 +1270,187 @@ body {
     body .content #solutions .decreaseWidth {
       width: 45% !important; }
     body .content #solutions .goDownBtn {
-      bottom: -98vh; }
+      bottom: 2vh; }
+  body .content #members {
+    position: relative;
+    background: url("../img/m-bg.jpg") center bottom no-repeat;
+    background-size: 100% 100%; }
+    body .content #members li {
+      display: inline-block; }
+    body .content #members .memberTitle {
+      position: absolute;
+      font-size: 2.5rem;
+      color: #fff;
+      word-spacing: -8px;
+      right: 50%;
+      top: 50%;
+      margin-top: -280px;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%); }
+    body .content #members ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      body .content #members ul.membersList {
+        position: absolute;
+        width: 715px;
+        top: 50%;
+        right: 50%;
+        -webkit-transform: translate(50%, -50%);
+        -moz-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, 50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%); }
+        body .content #members ul.membersList .member {
+          position: relative;
+          width: calc(660px/4);
+          height: calc(660px/4);
+          margin: 5px; }
+          body .content #members ul.membersList .member > .memeberImg {
+            width: calc(100% - 3px);
+            height: calc(100% - 3px);
+            border: 3px solid #ff9933 !important;
+            background-color: #ff9933; }
+            body .content #members ul.membersList .member > .memeberImg img {
+              opacity: 0.9;
+              width: 100%;
+              height: 100%;
+              -webkit-filter: grayscale(90%);
+              /* Chrome, Safari, Opera */
+              filter: grayscale(90%); }
+          body .content #members ul.membersList .member .memberInfo {
+            z-index: 100;
+            display: none;
+            position: absolute;
+            width: calc(300% + 30px);
+            height: 100%;
+            padding: 10px;
+            box-sizing: content-box;
+            background-color: #339999; }
+            body .content #members ul.membersList .member .memberInfo.rightInfo {
+              top: -10px;
+              left: -10px; }
+              body .content #members ul.membersList .member .memberInfo.rightInfo .memeberImg {
+                float: left; }
+              body .content #members ul.membersList .member .memberInfo.rightInfo .Info {
+                float: right; }
+            body .content #members ul.membersList .member .memberInfo.leftInfo {
+              top: -10px;
+              right: -10px; }
+              body .content #members ul.membersList .member .memberInfo.leftInfo .memeberImg {
+                float: right; }
+              body .content #members ul.membersList .member .memberInfo.leftInfo .Info {
+                float: left; }
+            body .content #members ul.membersList .member .memberInfo .memeberImg {
+              width: calc(660px/4);
+              height: calc(660px/4); }
+              body .content #members ul.membersList .member .memberInfo .memeberImg img {
+                width: calc(100% - 3px);
+                height: calc(100% - 3px);
+                border: 3px solid #339999; }
+            body .content #members ul.membersList .member .memberInfo .Info {
+              height: 100%;
+              width: calc(100% - 660px / 4 - 5px); }
+              body .content #members ul.membersList .member .memberInfo .Info .text {
+                width: 100%;
+                color: #fff;
+                height: calc(100% - 30px - 10px);
+                margin-top: 5px;
+                margin-bottom: 0; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .name {
+                  font-size: 1.1rem;
+                  border-right: solid 5px #ff9933;
+                  padding-right: 15px !important;
+                  margin-right: 5px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .skill {
+                  font-size: 0.9rem;
+                  margin-bottom: 10px !important;
+                  border-right: solid 5px #ff9933;
+                  padding-right: 15px !important;
+                  margin-right: 5px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text .quote {
+                  font-size: 0.8rem;
+                  font-style: italic;
+                  font-weight: 200;
+                  margin-right: 5px !important; }
+                  body .content #members ul.membersList .member .memberInfo .Info .text .quote i {
+                    color: #ff9933;
+                    margin: 5px 0px !important; }
+                body .content #members ul.membersList .member .memberInfo .Info .text p {
+                  margin: 0 !important; }
+              body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials {
+                text-align: center; }
+                body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li {
+                  margin: 5px;
+                  width: 30px;
+                  height: 30px;
+                  color: #fff;
+                  transition: all 0.5s;
+                  cursor: pointer; }
+                  body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
+                    color: #ff9933; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
     transform: translateX(50%); }
   body .goTopBtn {
     position: fixed;
-    right: 50px;
-    bottom: 2vh; }
+    right: 2%;
+    bottom: 2vh;
+    display: none; }
   body p.small {
     font-size: 10px; }
   body p.big {
-    font-size: 20px; } }
+    font-size: 20px; }
+  body .sectionChanger {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    color: #fff;
+    z-index: 9999; }
+    body .sectionChanger input {
+      display: block; }
+    body .sectionChanger .verticalLine {
+      border-left: 2px solid #fff; }
+    body .sectionChanger input[type=radio]:not(old) {
+      width: 2em;
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      opacity: 0; }
+    body .sectionChanger input[type=radio]:not(old) + label {
+      display: inline-block;
+      margin-left: -2em;
+      line-height: 1.5em; }
+    body .sectionChanger input[type=radio]:not(old) + label > span {
+      display: inline-block;
+      width: 0.7em;
+      height: 0.7em;
+      margin: 0.25em 0.5em 0.25em 0.25em;
+      border-radius: 60px;
+      background-color: #fff;
+      vertical-align: bottom; }
+    body .sectionChanger input[type=radio]:not(old):checked + label > span {
+      -webkit-transform: scale(1.7);
+      -moz-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+      -o-transform: scale(1.7);
+      transform: scale(1.7); }
+    body .sectionChanger input[type=radio]:not(old):checked + label > span > span > span {
+      position: absolute;
+      bottom: 50%;
+      right: 20px;
+      font-size: 10px;
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+      transform: translateY(50%); }
+    body .sectionChanger input[type=radio]:not(:checked) + label > span > span > span {
+      display: none; } }

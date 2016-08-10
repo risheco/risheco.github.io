@@ -27,14 +27,20 @@ function hoverRight() {
     $("#web").addClass("decreaseWidth");
 };
 
-// var windowHeight = $(window).height();
-// var windowWidth = $(window).width();
-// if(windowHeight<=windowWidth){
-//     $("body .content #intro").addClass("widthGTHeight");
-//     // $("body .content #intro").css({backgroundSize:'100% auto'});
-// }
-//
-// if(windowHeight>windowWidth){
-//     $("body .content #intro").addClass("heightGTWidth");
-//     // $("body .content #intro").css({backgroundSize:'auto 100% !important'});
-// }
+
+$("section#members ul.membersList li.member").on('mouseenter',function () {
+    $(this).children(".memberInfo").stop().fadeIn();
+});
+$("section#members ul.membersList li.member").on('mouseleave',function () {
+    $(this).children(".memberInfo").stop().hide();
+});
+
+var sectionHeight = $("section#intro").height();
+$(document).on('scroll',function () {
+    if ($(document).scrollTop() > 100){
+        $(".goTopBtn").fadeIn();
+    }
+    else{
+        $(".goTopBtn").fadeOut();
+    }
+})
