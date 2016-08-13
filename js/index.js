@@ -3,9 +3,7 @@ $(window).ready(setTimeout(function () {
     $(".content").css({"display": "block"});
 }, 6000));
 
-$('html, body').animate({
-    scrollTop: 0
-}, 0);
+$("html,body").animate({ scrollTop: 0 }, "slow");
 function hoverLeft() {
     $("#web").removeClass("decreaseWidth");
     $("#web").addClass("increaseWidth");
