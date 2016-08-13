@@ -64,70 +64,137 @@ body {
   body a {
     text-decoration: none; }
 
-.button {
-  cursor: pointer;
-  box-sizing: border-box;
-  min-width: 100px;
-  width: auto;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  font-family: "iransans"; }
-  .button.white {
-    color: #fff;
-    border: 2px solid #fff;
-    background-color: transparent; }
-    .button.white:hover {
-      border: 2px solid #cccccc;
-      color: #cccccc;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
-  .button.blue {
-    color: #339999;
-    border: 2px solid #339999;
-    background-color: transparent; }
-    .button.blue:hover {
-      border: 2px solid #1a4d4d;
-      color: #1a4d4d;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
-  .button.orange {
-    color: #ff9933;
-    border: 2px solid #ff9933;
-    background-color: transparent; }
-    .button.orange:hover {
-      border: 2px solid #cc6600;
-      color: #cc6600;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
-  .button.gray {
-    color: #444;
-    border: 2px solid #444;
-    background-color: transparent; }
-    .button.gray:hover {
-      border: 2px solid #111111;
-      color: #111111;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
-  .button.small {
-    min-width: 40px;
-    width: 40px; }
-  .button:focus {
-    outline: none; }
-  .button i:focus {
-    outline: none; }
+@media screen and (max-width: 480px) {
+  .button {
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 200px;
+    width: auto;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: "iransans"; }
+    .button.white {
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent; }
+      .button.white:hover {
+        border: 2px solid #cccccc;
+        color: #cccccc;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.blue {
+      color: #339999;
+      border: 2px solid #339999;
+      background-color: transparent; }
+      .button.blue:hover {
+        border: 2px solid #1a4d4d;
+        color: #1a4d4d;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.orange {
+      color: #ff9933;
+      border: 2px solid #ff9933;
+      background-color: transparent; }
+      .button.orange:hover {
+        border: 2px solid #cc6600;
+        color: #cc6600;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.gray {
+      color: #444;
+      border: 2px solid #444;
+      background-color: transparent; }
+      .button.gray:hover {
+        border: 2px solid #111111;
+        color: #111111;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.small {
+      min-width: 80px;
+      width: 80px; }
+    .button:focus {
+      outline: none; }
+    .button i:focus {
+      outline: none; } }
+
+@media screen and (min-width: 1025px) {
+  .button {
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 100px;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-family: "iransans"; }
+    .button.white {
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent; }
+      .button.white:hover {
+        border: 2px solid #cccccc;
+        color: #cccccc;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.blue {
+      color: #339999;
+      border: 2px solid #339999;
+      background-color: transparent; }
+      .button.blue:hover {
+        border: 2px solid #1a4d4d;
+        color: #1a4d4d;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.orange {
+      color: #ff9933;
+      border: 2px solid #ff9933;
+      background-color: transparent; }
+      .button.orange:hover {
+        border: 2px solid #cc6600;
+        color: #cc6600;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.gray {
+      color: #444;
+      border: 2px solid #444;
+      background-color: transparent; }
+      .button.gray:hover {
+        border: 2px solid #111111;
+        color: #111111;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
+    .button.small {
+      min-width: 40px;
+      width: 40px; }
+    .button:focus {
+      outline: none; }
+    .button i:focus {
+      outline: none; } }
 
 input, textarea {
   background-color: transparent;
