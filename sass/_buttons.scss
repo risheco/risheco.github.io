@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   .button {
     cursor: pointer;
     box-sizing: border-box;
@@ -14,6 +14,7 @@
     @include button($blue, blue);
     @include button($orange, orange);
     @include button($gray, gray);
+    border-width: 5px !important;
     &.small {
       min-width: 80px;
       width: 80px;
@@ -29,37 +30,34 @@
     }
   }
 }
-@media screen and (max-width: 1024px) and (orientation: portrait){
-}
-@media screen and (max-width: 1024px) and (orientation: landscape){
-}
-@media screen and (min-width: 1025px){
-  .button {
-    cursor: pointer;
-    box-sizing: border-box;
-    min-width: 100px;
-    width: auto;
-    height:35px;
-    line-height: 35px;
-    text-align: center;
-    font-family: "iransans";
-    @include button($white, white);
-    @include button($blue, blue);
-    @include button($orange, orange);
-    @include button($gray, gray);
-    &.small {
-      min-width: 40px;
-      width: 40px;
-    }
+
+
+.button {
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: 100px;
+  width: auto;
+  height:35px;
+  line-height: 35px;
+  text-align: center;
+  font-family: "iransans";
+  @include button($white, white);
+  @include button($blue, blue);
+  @include button($orange, orange);
+  @include button($gray, gray);
+  &.small {
+    min-width: 40px;
+    width: 40px;
+  }
+  &:focus{
+    outline:none;
+  }
+  i {
+    //line-height: 35px !important;
     &:focus{
-      outline:none;
-    }
-    i {
-      //line-height: 35px !important;
-      &:focus{
-        outline: none;
-      }
+      outline: none;
     }
   }
 }
+
 

@@ -42,13 +42,13 @@ body{
   @include drawSVG(#_x31_2,1000,1000,5s,4s);
 
   .loading{
-    display: none;
+    //display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 999999;
     background-color: darken($white,15%);
     svg{
       &#logoAnimation {
@@ -148,7 +148,7 @@ body{
         .web-content {
           color: $gray;
           position: relative;
-          top: 10vh;
+          top: 5vh;
           left: 0;
           &.scaled {
             transform: scale(1.1);
@@ -175,7 +175,7 @@ body{
               width: 100%;
               text-align: center;
               position: absolute;
-              top: calc(10vh + 250px);
+              top: calc(10vh + 140px);
               right: 50%;
               transform: translateX(50%);
               font-size: 1.5rem;
@@ -185,7 +185,7 @@ body{
               width: 400px;
               text-align: justify;
               position: absolute;
-              top: calc(10vh + 320px);
+              top: calc(10vh + 200px);
               right: 50%;
               transform: translateX(50%);
               color: $gray;
@@ -199,7 +199,7 @@ body{
         .app-content {
           color: $white;
           position: relative;
-          top: 10vh;
+          top: 5vh;
           svg {
             position: absolute;
             height: 300px;
@@ -221,7 +221,7 @@ body{
               width: 100%;
               text-align: center;
               position: absolute;
-              top: calc(10vh + 250px);
+              top: calc(10vh + 140px);
               right: 50%;
               transform: translateX(50%);
               font-size: 1.5rem;
@@ -231,7 +231,7 @@ body{
               width: 400px;
               text-align: justify;
               position: absolute;
-              top: calc(10vh + 320px);
+              top: calc(10vh + 200px);
               right: 50%;
               transform: translateX(50%);
               color: $white;
@@ -242,6 +242,7 @@ body{
         }
       }
       .slant-container {
+        display: none;
         width: 0;
         height: 100%;
         float: left;
@@ -284,15 +285,15 @@ body{
       }
       #web {
         background-color: $white;
-        height: 100%;
-        width: 50%;
+        height: 50%;
+        width: 100%;
         float: left;
         transition: all 0.5s ease-in;
       }
       #app {
         background-color: $gray;
-        height: 100%;
-        width: 50%;
+        height: 50%;
+        width: 100%;
         float: right;
         @include transition(all 0.5s ease-in);
       }
@@ -314,7 +315,7 @@ body{
         display: inline-block;
       }
       background: url("../img/m-bg.jpg") center bottom no-repeat;
-      background-size: 100% 100%;
+      background-size: auto 100%;
       .memberTitle{
         position: absolute;
         font-size: 2.5rem;
@@ -465,14 +466,14 @@ body{
         position: absolute;
         bottom:50%;
         right:50%;
-        margin-bottom: -240px;
+        margin-bottom: -300px;
         -webkit-transform: translateX(50%);
         -moz-transform: translateX(50%);
         -ms-transform: translateX(50%);
         -o-transform: translateX(50%);
         transform: translateX(50%);
         width: 105px;
-        height: 45px;
+        height: 70px;
         &:hover span{
           color: darken($blue,10%) !important;
           -webkit-transition: all ease 0.5s;
@@ -484,11 +485,12 @@ body{
         span{
           color: $blue !important;
           font-family: "iransans";
-          line-height: 40px;
+          line-height: 2rem;
           padding: 5px;
-          font-size: 1.5rem;
+          font-size: 2rem;
           display: inline;
           text-align: center;
+          color: $white !important;
         }
         i {
           line-height: 40px;
@@ -507,7 +509,8 @@ body{
         p{
           position: absolute;
           right:50%;
-          top:3vh;
+          top:10vh;
+          font-size: 2rem;
           -webkit-transform: translateX(50%);
           -moz-transform: translateX(50%);
           -ms-transform: translateX(50%);
@@ -515,7 +518,7 @@ body{
           transform: translateX(50%);
         }
         form {
-          width: 500px;
+          width: 800px;
           height:auto ;
           position: absolute;
           top:50%;
@@ -526,7 +529,9 @@ body{
           -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
           input{
-            width: 205px;
+            width: 345px;
+            border: 5px solid  $orange !important;
+            font-size: 1.2rem !important;
             &:first-child{
               margin-left: 0 !important;
               float: right;
@@ -534,13 +539,16 @@ body{
             &:nth-child(2){
               //margin-right: 0;
               //margin-left: 0 !important;
-              margin-right: 0 !important;
+              margin-right: 0 $orange !important;
               float: left;
+              margin-left: 10px !important;
             }
           }
           textarea{
             width: calc(100% - 55px);
             height: 135px;
+            border: 5px solid $orange !important;
+            font-size: 1.2rem !important;
           }
           button {
             position: absolute;
@@ -652,11 +660,14 @@ body{
     height: auto;
     width: auto;
     color: $white;
-    z-index: 9999;
+    z-index: 999;
     &.blue{
       color: $blue;
       input[type=radio]:not(old) + label > span {
         background-color: $blue !important;
+      }
+      input[type=radio]:not(old):checked + label > span {
+        background-color: $orange !important;
       }
     }
     input {
@@ -681,9 +692,9 @@ body{
     }
     input[type=radio]:not(old) + label > span {
       display: inline-block;
-      width: 0.7em;
-      height: 0.7em;
-      margin: 0.25em 0.5em 0.25em 0.25em;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0.5em 1em 0.5em 0.5em;
       border-radius: 60px;
       background-color: $white;
       vertical-align: bottom;
@@ -695,8 +706,10 @@ body{
       -ms-transform: scale(1.7);
       -o-transform: scale(1.7);
       transform: scale(1.7);
+      background-color: $orange;
     }
     input[type=radio]:not(old):checked + label > span > span > span {
+      display: none;
       position: absolute;
       bottom: 50%;
       right: 20px;
@@ -711,4 +724,33 @@ body{
       display: none;
     }
   }
+  .button {
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 200px;
+    width: auto;
+    height:70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: "iransans";
+    @include button($white, white);
+    @include button($blue, blue);
+    @include button($orange, orange);
+    @include button($gray, gray);
+    border-width: 5px !important;
+    &.small {
+      min-width: 80px;
+      width: 80px;
+    }
+    &:focus{
+      outline:none;
+    }
+    i {
+      //line-height: 35px !important;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
 }
+

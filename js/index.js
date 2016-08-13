@@ -5,16 +5,27 @@ $(window).ready(setTimeout(function () {
 
 $("html,body").animate({ scrollTop: 0 }, "slow");
 function hoverLeft() {
-    $("#web").removeClass("decreaseWidth");
-    $("#web").addClass("increaseWidth");
-    $("#app").removeClass("increaseWidth");
-    $("#app").addClass("decreaseWidth");
+    // alert($(window).width());
+    if ($("#app").width()== $(window).width()){
+        return;
+    }
+    else {
+        $("#web").removeClass("decreaseWidth");
+        $("#web").addClass("increaseWidth");
+        $("#app").removeClass("increaseWidth");
+        $("#app").addClass("decreaseWidth");
+    }
 };
 function hoverRight() {
-    $("#app").removeClass("decreaseWidth");
-    $("#app").addClass("increaseWidth");
-    $("#web").removeClass("increaseWidth");
-    $("#web").addClass("decreaseWidth");
+    if ($("#app").width()== $(window).width()){
+        return;
+    }
+    else {
+        $("#app").removeClass("decreaseWidth");
+        $("#app").addClass("increaseWidth");
+        $("#web").removeClass("increaseWidth");
+        $("#web").addClass("decreaseWidth");
+    }
 };
 $("section#members ul.membersList li.member").on('mouseenter', function () {
     $(this).children(".memberInfo").stop().fadeIn();
@@ -44,7 +55,8 @@ $(function () {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target[0].id == "solutions") {
                 $("#goToSolutions").prop("checked", true);
-                $('.sectionChanger').removeClass('blue');
+                // $('.sectionChanger').removeClass('blue');
+                $('.sectionChanger').addClass('blue');
             }
             else if (target[0].id == "members") {
                 $("#goToMembers").prop("checked", true);
@@ -76,7 +88,8 @@ $(function () {
             scrollTop: $('#solutions').offset().top
         }, 1000);
         $("#goToSolutions").prop("checked", true);
-        $('.sectionChanger').removeClass('blue');
+        // $('.sectionChanger').removeClass('blue');
+        $('.sectionChanger').addClass('blue');
     });
     $('#goToMembers').click(function () {
         $('html, body').animate({
@@ -94,6 +107,24 @@ $(function () {
     });
 });
 
-
+var sectionHeight = $("section#intro").height();
+$(document).on('scroll',function () {
+   if((0.8*sectionHeight)>$(window).scrollTop() && $(window).scrollTop()>=0){
+       $('.sectionChanger').removeClass('blue');
+       $("#goToIntro").prop("checked", true);
+   }
+   else if((2*0.8*sectionHeight)>$(window).scrollTop() && $(window).scrollTop()>=(0.8*sectionHeight)){
+       $('.sectionChanger').addClass('blue');
+       $("#goToSolutions").prop("checked", true);
+   }
+    if((3*0.8*sectionHeight)>$(window).scrollTop() && $(window).scrollTop()>=(2*0.8*sectionHeight)){
+        $('.sectionChanger').removeClass('blue');
+       $("#goToMembers").prop("checked", true);
+   }
+    if((4*0.8*sectionHeight)>$(window).scrollTop() && $(window).scrollTop()>=(3*0.8*sectionHeight)){
+        $('.sectionChanger').addClass('blue');
+       $("#goToAbout").prop("checked", true);
+   }
+});
 
 
