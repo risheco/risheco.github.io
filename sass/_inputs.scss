@@ -1,0 +1,49 @@
+input, textarea {
+  background-color: transparent;
+  outline: none;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 0;
+  display: inline-block;
+  margin: 15px;
+  font-family: "iransans";
+  //box-sizing: border-box;
+  &.orange {
+    border-color: $orange;
+  }
+  &.blue {
+    border-color: $blue;
+  }
+  &.gray {
+    border-color: $gray;
+  }
+  &.white {
+    border-color: $white;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lighten($gray, 10%);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: lighten($gray, 10%);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: lighten($gray, 10%);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: lighten($gray, 10%);
+  }
+  &:focus{
+    border-color: $blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all  0.5s;
+    -ms-transition: all  0.5s;
+    -o-transition: all  0.5s;
+    transition: all  0.5s;
+  }
+}
+
+textarea{
+  resize: none;
+  display: block;
+  margin-top: 25px;
+}

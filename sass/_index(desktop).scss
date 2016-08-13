@@ -22,27 +22,6 @@ body {
   @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
   @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
 
-  ////reverse of drawing loading SVG
-  ////@include drawSVGReverse(#_x31_, 1000, 1000, 5s, 0s, linear);
-  ////@include drawSVGReverse(#_x33_, 1000, 1000, 3s, 0.5s, linear);
-  ////@include drawSVGReverse(#_x34_, 1000, 1000, 2s, 0.5s, linear);
-  ////@include drawSVGReverse(#_x32_, 1000, 1000, 3s, 1.1s, linear);
-  ////@include drawSVGReverse(#_x35_, 1000, 1000, 3s, 1s, linear);
-  ////@include drawSVGReverse(#_x36_, 1000, 1000, 3s, 2.5s, linear);
-  ////@include drawSVGReverse(#_x31_1, 1000, 1000, 3s, 2.7s, linear);
-  ////@include drawSVGReverse(#_x37_, 1000, 1000, 3s, 2.7s, linear);
-  ////@include drawSVGReverse(#_x38_, 1000, 1000, 3s, 2.8s, linear);
-  ////@include drawSVGReverse(#_x39_, 1000, 1000, 3s, 3.1s, linear);
-  ////@include drawSVGReverse(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
-  ////@include drawSVGReverse(#_x31_2, 1000, 1000, 5s, 9s, ease-out);
-  //
-  ////display: none;
-  //.heightGTWidth {
-  //  background-size: auto 100% !important;
-  //}
-  //.widthGTHeight {
-  //  background-size: 100% auto !important;
-  //}
   .loading {
     display: none;
     position: fixed;
@@ -76,8 +55,6 @@ body {
 
     }
   }
-  //}
-
   .content {
     //display: none;
     section {
@@ -86,6 +63,7 @@ body {
       overflow: hidden;
     }
     #intro {
+      height:100vh;
       position: relative;
       background-color: $gray;
       background: url("../img/bg-cr.jpg") center bottom no-repeat;
@@ -147,7 +125,9 @@ body {
       }
     }
     #solutions {
+      height:100vh;
       position: relative;
+      top:0;
       #web {
         .web-content {
           color: $gray;
@@ -311,7 +291,9 @@ body {
       }
     }
     #members {
+      height: 100vh;
       position: relative;
+      top:0;
       li{
         display: inline-block;
       }
@@ -497,8 +479,135 @@ body {
         }
       }
     }
+    #about {
+      height: 100vh;
+      position: relative;
+      top:0;
+      .contactUs{
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: $white;
+        p{
+          position: absolute;
+          right:50%;
+          top:3vh;
+          -webkit-transform: translateX(50%);
+          -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+          -o-transform: translateX(50%);
+          transform: translateX(50%);
+        }
+        form {
+          width: 500px;
+          height:auto ;
+          position: absolute;
+          top:50%;
+          left: 50%;
+          -webkit-transform: translate(-50%,-50%);
+          -moz-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          input{
+            width: 205px;
+            &:first-child{
+              margin-left: 0 !important;
+              float: right;
+            }
+            &:nth-child(2){
+              //margin-right: 0;
+              //margin-left: 0 !important;
+              margin-right: 0 !important;
+              float: left;
+            }
+          }
+          textarea{
+            width: calc(100% - 55px);
+            height: 135px;
+          }
+          button {
+            position: absolute;
+            right:50%;
+            -webkit-transform: translateX(50%);
+            -moz-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            -o-transform: translateX(50%);
+            transform: translateX(50%);
+          }
+        }
+      }
+      .socialNetworks{
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        background-color: $gray;
+        overflow: hidden;
+        &::after{
+          content: '';
+          position: absolute;
+          top:0;
+          left: 0;
+          border-left: 50vw solid $white;
+          border-top:40px solid $white;
+          border-right:50vw solid transparent;
+          border-bottom:40px solid transparent;
+        }
+        img {
+          height: 70vh;
+          position: absolute;
+          bottom: 50px;
+          right:100px;
+          opacity: 0.2;
+        }
+        div{
+          position: absolute;
+          right: 50%;
+          top: 60%;
+          -webkit-transform: translate(50%,-50%);
+          -moz-transform: translate(50%,-50%);
+          -ms-transform: translate(50%,-50%);
+          -o-transform: translate(50%,-50%);
+          transform: translate(50%,-50%);
+          width: 500px;
+          height: auto;
+          text-align: center;
+          p {
+            color: white;
+            text-align: justify;
+          }
+          ul{
+            padding: 0;
+            margin: 0 10% !important;
+            width: 80%;
+            list-style: none;
+            border-top: 2px solid $blue ;
+            li{
+              display: inline-block;
+              color: $white;
+              margin: 15px;
+              cursor: pointer;
+              -webkit-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s;
+              i{
+                font-size: 1.5em !important;
+              }
+              &:first-child{
+                border-left: 2px solid $white;
+                padding-left: 30px;
+              }
+              &:hover{
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-
   .goDownBtn {
     position: absolute;
     right: 50%;
@@ -511,7 +620,6 @@ body {
     bottom: 2vh;
     display: none;
   }
-
   p {
     &.small {
       font-size: 10px;
@@ -520,7 +628,6 @@ body {
       font-size: 20px
     }
   }
-
   .sectionChanger {
     position: fixed;
     right: 2%;
@@ -530,6 +637,12 @@ body {
     width: auto;
     color: $white;
     z-index: 9999;
+    &.blue{
+      color: $blue;
+      input[type=radio]:not(old) + label > span {
+        background-color: $blue !important;
+      }
+    }
     input {
       display: block;
     }
@@ -582,7 +695,6 @@ body {
       display: none;
     }
   }
-
 }
 
 

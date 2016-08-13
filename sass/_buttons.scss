@@ -6,6 +6,7 @@
   height:35px;
   line-height: 35px;
   text-align: center;
+  font-family: "iransans";
   @include button($white, white);
   @include button($blue, blue);
   @include button($orange, orange);

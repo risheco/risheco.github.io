@@ -59,7 +59,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: "iransans" !important; }
+  font-family: "iransans" !important;
+  overflow: hidden; }
   body a {
     text-decoration: none; }
 
@@ -70,7 +71,8 @@ body {
   width: auto;
   height: 35px;
   line-height: 35px;
-  text-align: center; }
+  text-align: center;
+  font-family: "iransans"; }
   .button.white {
     color: #fff;
     border: 2px solid #fff;
@@ -126,6 +128,48 @@ body {
     outline: none; }
   .button i:focus {
     outline: none; }
+
+input, textarea {
+  background-color: transparent;
+  outline: none;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 0;
+  display: inline-block;
+  margin: 15px;
+  font-family: "iransans"; }
+  input.orange, textarea.orange {
+    border-color: #ff9933; }
+  input.blue, textarea.blue {
+    border-color: #339999; }
+  input.gray, textarea.gray {
+    border-color: #444; }
+  input.white, textarea.white {
+    border-color: #fff; }
+  input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #5e5e5e; }
+  input ::-moz-placeholder, textarea ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #5e5e5e; }
+  input :-ms-input-placeholder, textarea :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #5e5e5e; }
+  input :-moz-placeholder, textarea :-moz-placeholder {
+    /* Firefox 18- */
+    color: #5e5e5e; }
+  input:focus, textarea:focus {
+    border-color: #339999;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all  0.5s;
+    -ms-transition: all  0.5s;
+    -o-transition: all  0.5s;
+    transition: all  0.5s; }
+
+textarea {
+  resize: none;
+  display: block;
+  margin-top: 25px; }
 
 @media screen and (max-width: 480px) {
   body {
@@ -599,6 +643,7 @@ body {
     height: 100vh;
     overflow: hidden; }
   body .content #intro {
+    height: 100vh;
     position: relative;
     background-color: #444;
     background: url("../img/bg-cr.jpg") center bottom no-repeat;
@@ -649,7 +694,9 @@ body {
       body .content #intro #pngLogo .goDownBtn {
         bottom: 2vh; }
   body .content #solutions {
-    position: relative; }
+    height: 100vh;
+    position: relative;
+    top: 0; }
     body .content #solutions #web .web-content {
       color: #444;
       position: relative;
@@ -782,7 +829,9 @@ body {
     body .content #solutions .goDownBtn {
       bottom: 2vh; }
   body .content #members {
+    height: 100vh;
     position: relative;
+    top: 0;
     background: url("../img/m-bg.jpg") center bottom no-repeat;
     background-size: 100% 100%; }
     body .content #members li {
@@ -931,6 +980,113 @@ body {
         text-align: center; }
       body .content #members .addUser i {
         line-height: 40px; }
+  body .content #about {
+    height: 100vh;
+    position: relative;
+    top: 0; }
+    body .content #about .contactUs {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background-color: #fff; }
+      body .content #about .contactUs p {
+        position: absolute;
+        right: 50%;
+        top: 3vh;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        transform: translateX(50%); }
+      body .content #about .contactUs form {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        body .content #about .contactUs form input {
+          width: 205px; }
+          body .content #about .contactUs form input:first-child {
+            margin-left: 0 !important;
+            float: right; }
+          body .content #about .contactUs form input:nth-child(2) {
+            margin-right: 0 !important;
+            float: left; }
+        body .content #about .contactUs form textarea {
+          width: calc(100% - 55px);
+          height: 135px; }
+        body .content #about .contactUs form button {
+          position: absolute;
+          right: 50%;
+          -webkit-transform: translateX(50%);
+          -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+          -o-transform: translateX(50%);
+          transform: translateX(50%); }
+    body .content #about .socialNetworks {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      background-color: #444;
+      overflow: hidden; }
+      body .content #about .socialNetworks::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 50vw solid #fff;
+        border-top: 40px solid #fff;
+        border-right: 50vw solid transparent;
+        border-bottom: 40px solid transparent; }
+      body .content #about .socialNetworks img {
+        height: 70vh;
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        opacity: 0.2; }
+      body .content #about .socialNetworks div {
+        position: absolute;
+        right: 50%;
+        top: 60%;
+        -webkit-transform: translate(50%, -50%);
+        -moz-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        width: 500px;
+        height: auto;
+        text-align: center; }
+        body .content #about .socialNetworks div p {
+          color: white;
+          text-align: justify; }
+        body .content #about .socialNetworks div ul {
+          padding: 0;
+          margin: 0 10% !important;
+          width: 80%;
+          list-style: none;
+          border-top: 2px solid #339999; }
+          body .content #about .socialNetworks div ul li {
+            display: inline-block;
+            color: #fff;
+            margin: 15px;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+            body .content #about .socialNetworks div ul li i {
+              font-size: 1.5em !important; }
+            body .content #about .socialNetworks div ul li:first-child {
+              border-left: 2px solid #fff;
+              padding-left: 30px; }
+            body .content #about .socialNetworks div ul li:hover {
+              color: #339999; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
@@ -954,6 +1110,10 @@ body {
     width: auto;
     color: #fff;
     z-index: 9999; }
+    body .sectionChanger.blue {
+      color: #339999; }
+      body .sectionChanger.blue input[type=radio]:not(old) + label > span {
+        background-color: #339999 !important; }
     body .sectionChanger input {
       display: block; }
     body .sectionChanger .verticalLine {
@@ -1121,6 +1281,7 @@ body {
     height: 100vh;
     overflow: hidden; }
   body .content #intro {
+    height: 100vh;
     position: relative;
     background-color: #444;
     background: url("../img/bg-cr.jpg") center bottom no-repeat;
@@ -1171,7 +1332,9 @@ body {
       body .content #intro #pngLogo .goDownBtn {
         bottom: 2vh; }
   body .content #solutions {
-    position: relative; }
+    height: 100vh;
+    position: relative;
+    top: 0; }
     body .content #solutions #web .web-content {
       color: #444;
       position: relative;
@@ -1304,7 +1467,9 @@ body {
     body .content #solutions .goDownBtn {
       bottom: 2vh; }
   body .content #members {
+    height: 100vh;
     position: relative;
+    top: 0;
     background: url("../img/m-bg.jpg") center bottom no-repeat;
     background-size: 100% 100%; }
     body .content #members li {
@@ -1453,6 +1618,113 @@ body {
         text-align: center; }
       body .content #members .addUser i {
         line-height: 40px; }
+  body .content #about {
+    height: 100vh;
+    position: relative;
+    top: 0; }
+    body .content #about .contactUs {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background-color: #fff; }
+      body .content #about .contactUs p {
+        position: absolute;
+        right: 50%;
+        top: 3vh;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        transform: translateX(50%); }
+      body .content #about .contactUs form {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        body .content #about .contactUs form input {
+          width: 205px; }
+          body .content #about .contactUs form input:first-child {
+            margin-left: 0 !important;
+            float: right; }
+          body .content #about .contactUs form input:nth-child(2) {
+            margin-right: 0 !important;
+            float: left; }
+        body .content #about .contactUs form textarea {
+          width: calc(100% - 55px);
+          height: 135px; }
+        body .content #about .contactUs form button {
+          position: absolute;
+          right: 50%;
+          -webkit-transform: translateX(50%);
+          -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+          -o-transform: translateX(50%);
+          transform: translateX(50%); }
+    body .content #about .socialNetworks {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      background-color: #444;
+      overflow: hidden; }
+      body .content #about .socialNetworks::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 50vw solid #fff;
+        border-top: 40px solid #fff;
+        border-right: 50vw solid transparent;
+        border-bottom: 40px solid transparent; }
+      body .content #about .socialNetworks img {
+        height: 70vh;
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        opacity: 0.2; }
+      body .content #about .socialNetworks div {
+        position: absolute;
+        right: 50%;
+        top: 60%;
+        -webkit-transform: translate(50%, -50%);
+        -moz-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        width: 500px;
+        height: auto;
+        text-align: center; }
+        body .content #about .socialNetworks div p {
+          color: white;
+          text-align: justify; }
+        body .content #about .socialNetworks div ul {
+          padding: 0;
+          margin: 0 10% !important;
+          width: 80%;
+          list-style: none;
+          border-top: 2px solid #339999; }
+          body .content #about .socialNetworks div ul li {
+            display: inline-block;
+            color: #fff;
+            margin: 15px;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+            body .content #about .socialNetworks div ul li i {
+              font-size: 1.5em !important; }
+            body .content #about .socialNetworks div ul li:first-child {
+              border-left: 2px solid #fff;
+              padding-left: 30px; }
+            body .content #about .socialNetworks div ul li:hover {
+              color: #339999; }
   body .goDownBtn {
     position: absolute;
     right: 50%;
@@ -1476,6 +1748,10 @@ body {
     width: auto;
     color: #fff;
     z-index: 9999; }
+    body .sectionChanger.blue {
+      color: #339999; }
+      body .sectionChanger.blue input[type=radio]:not(old) + label > span {
+        background-color: #339999 !important; }
     body .sectionChanger input {
       display: block; }
     body .sectionChanger .verticalLine {
