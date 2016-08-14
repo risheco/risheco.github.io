@@ -1,8 +1,8 @@
-$(window).ready(setTimeout(function () {
-    $(".loading").fadeOut(600);
-    
-    $(".content").css({"display": "block"});
-}, 6000));
+$(window).load(
+    function(){
+        setTimeout(function () {
+            $(".loading").fadeOut(600);
+        }, 2000)});
 
 $(".contentInMac .rect1").removeClass('show');
 $(".contentInMac .rect2").removeClass('show');
