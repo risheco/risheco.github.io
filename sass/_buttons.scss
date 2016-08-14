@@ -1,5 +1,3 @@
-
-
 @media screen and (max-width: 767px){
   .button {
     cursor: pointer;
@@ -23,14 +21,12 @@
       outline:none;
     }
     i {
-      //line-height: 35px !important;
       &:focus{
         outline: none;
       }
     }
   }
 }
-
 
 .button {
   cursor: pointer;
@@ -53,7 +49,6 @@
     outline:none;
   }
   i {
-    //line-height: 35px !important;
     &:focus{
       outline: none;
     }

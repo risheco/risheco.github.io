@@ -1,53 +1,55 @@
 body {
 
-  .heightGTWidth {
-    background-size: auto 100% !important;
-  }
-  .widthGTHeight {
-    background-size: 100% auto !important;
-  }
-  //.loading {
+  min-width: 768px !important;
+  //overflow-x: scroll;
 
   //draw loading SVG
-  @include drawSVG(#_x31_, 1000, 1000, 5s, 0s, linear);
-  @include drawSVG(#_x33_, 1000, 1000, 3s, 0.5s, linear);
-  @include drawSVG(#_x34_, 1000, 1000, 2s, 0.5s, linear);
-  @include drawSVG(#_x32_, 1000, 1000, 3s, 1.1s, linear);
-  @include drawSVG(#_x35_, 1000, 1000, 3s, 1s, linear);
-  @include drawSVG(#_x36_, 1000, 1000, 3s, 2.5s, linear);
-  @include drawSVG(#_x31_1, 1000, 1000, 3s, 2.7s, linear);
-  @include drawSVG(#_x37_, 1000, 1000, 3s, 2.7s, linear);
-  @include drawSVG(#_x38_, 1000, 1000, 3s, 2.8s, linear);
+  @include drawSVG(#_x31_, 1500, 1500, 5s, 0s, linear);
+  @include drawSVG(#_x33_, 1000, 1000, 3s, 2.5s, linear);
+  @include drawSVG(#_x34_, 1000, 1000, 2s, 2.4s, linear);
+  @include drawSVG(#_x32_, 1000, 1000, 3s, 2.8s, linear);
+  @include drawSVG(#_x35_, 1000, 1000, 3s, 3s, linear);
+  @include drawSVG(#_x36_, 1000, 1000, 3s, 3.8s, linear);
+  @include drawSVG(#_x31_1, 1000, 1000, 3s, 4s, linear);
+  @include drawSVG(#_x37_, 1000, 1000, 3s, 3.4s, linear);
+  @include drawSVG(#_x38_, 1000, 1000, 3s, 3.6s, linear);
   @include drawSVG(#_x39_, 1000, 1000, 3s, 3.1s, linear);
   @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
-  @include drawSVG(#_x31_2, 1000, 1000, 5s, 4s, ease-out);
+  @include drawSVG(#_x31_2, 1000, 1000, 2s, 5s, linear);
 
   .loading {
     //display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 999999;
-    background-color: darken($white, 15%);
-    //background-size: auto 100%;
-    //background: url("../img/loading-bg.jpg") right bottom;
+    //background-color: darken($white, 15%);
+    background-color: $gray;
+    //background: url("../img/bg-cr.jpg") center bottom no-repeat;
+    //background-size: 100% 100%;
     svg {
       &#logoAnimation {
-        width: 400px;
-        height: auto;
+        //width: 400px;
+        //height: auto;
+        //position: absolute;
+        //margin-left: -200px;
+        //top: 0;
+        //left: 50%;
+        width: auto;
+        height: 95vh;
         position: absolute;
-        margin-left: -200px;
+        right: 50%;
         top: 0;
-        left: 50%;
+        transform: translate(50%, -20%);
       }
       &#wait {
         width: 150px;
         height: auto;
         position: absolute;
         margin-left: -75px;
-        bottom: 200px;
+        bottom: 150px;
         left: 50%;
         opacity: 1;
         @include fadeIn(2s, 0s, 1);
@@ -55,22 +57,25 @@ body {
 
     }
   }
+
   .content {
-    //display: none;
+
     section {
       width: 100vw;
       height: 100vh;
       overflow: hidden;
     }
+
     #intro {
       height:100vh;
       position: relative;
       background-color: $gray;
       background: url("../img/bg-cr.jpg") center bottom no-repeat;
       background-size: 100% 100%;
+      width: 100vw;
       #pngLogo {
         color: $white;
-        img {
+        img, svg {
           width: auto;
           height: 95vh;
           position: absolute;
@@ -124,11 +129,17 @@ body {
         }
       }
     }
+
     #solutions {
       height:100vh;
       position: relative;
       top:0;
       #web {
+        background-color: $white;
+        height: 100%;
+        width: 50%;
+        float: left;
+        transition: all 0.5s ease-in;
         .web-content {
           color: $gray;
           position: relative;
@@ -152,6 +163,44 @@ body {
               width: auto;
               top: 20px;
               left: 45%;
+            }
+          }
+          div.contentInMac{
+            position: absolute;
+            width: 250px;
+            //background-color: #cccccc;
+            height: 145px;
+            margin-top: 30px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            float: left;
+            .rect1{
+              display: none;
+              width: 100%;
+              background-color: #ccc;
+              height: 40px;
+              float: left;
+            }
+            .rect2{
+              display: none;
+              width: 30%;
+              margin-right: 10px;
+              margin-top: 10px;
+              height: 95px;
+              background-color: $orange;
+              float: left;
+            }
+            .rect3{
+              display: none;
+              width: calc(70% - 10px);
+              height: 95px;
+              margin-top: 10px;
+              background-color: $blue;
+              float: left;
             }
           }
           p {
@@ -180,6 +229,11 @@ body {
         }
       }
       #app {
+        background-color: $gray;
+        height: 100%;
+        width: 50%;
+        float: right;
+        @include transition(all 0.5s ease-in);
         .app-content {
           color: $white;
           position: relative;
@@ -198,6 +252,42 @@ body {
               height: 85px;
               width: auto;
               top: 32px;
+            }
+          }
+          div.contentInMac{
+            position: absolute;
+            width: 100px;
+            height: 210px;
+            margin-top: 40px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            float: left;
+            .rect1{
+              display: none;
+              width: 100%;
+              background-color: #ccc;
+              height: 40px;
+              float: left;
+            }
+            .rect2{
+              display: none;
+              width: 100%;
+              margin-top: 10px;
+              height: 60px;
+              background-color: $orange;
+              float: left;
+            }
+            .rect3{
+              display: none;
+              width: 100%;
+              height: 90px;
+              margin-top: 10px;
+              background-color: $blue;
+              float: left;
             }
           }
           p {
@@ -266,20 +356,6 @@ body {
           }
         }
       }
-      #web {
-        background-color: $white;
-        height: 100%;
-        width: 50%;
-        float: left;
-        transition: all 0.5s ease-in;
-      }
-      #app {
-        background-color: $gray;
-        height: 100%;
-        width: 50%;
-        float: right;
-        @include transition(all 0.5s ease-in);
-      }
       .increaseWidth {
         width: 55% !important;
       }
@@ -290,6 +366,7 @@ body {
         bottom: 2vh;
       }
     }
+
     #members {
       height: 100vh;
       position: relative;
@@ -332,9 +409,6 @@ body {
             width: calc(660px/4);
             height: calc(660px/4);
             margin: 5px;
-            //&:hover .memberInfo{
-            //  opacity: 1;
-            //}
             &>.memeberImg{
               width: calc(100% - 3px);
               height: calc(100% - 3px);
@@ -479,6 +553,7 @@ body {
         }
       }
     }
+
     #about {
       height: 100vh;
       position: relative;
@@ -516,8 +591,6 @@ body {
               float: right;
             }
             &:nth-child(2){
-              //margin-right: 0;
-              //margin-left: 0 !important;
               margin-right: 0 !important;
               float: left;
             }
@@ -607,19 +680,23 @@ body {
         }
       }
     }
+
   }
+
   .goDownBtn {
     position: absolute;
     right: 50%;
     bottom:2vh;
     transform: translateX(50%);
   }
+
   .goTopBtn {
     position: fixed;
     right: 2%;
     bottom: 2vh;
     display: none;
   }
+
   p {
     &.small {
       font-size: 10px;
@@ -628,6 +705,7 @@ body {
       font-size: 20px
     }
   }
+
   .sectionChanger {
     position: fixed;
     right: 2%;
@@ -698,6 +776,13 @@ body {
     input[type=radio]:not(:checked) + label > span > span > span {
       display: none;
     }
+  }
+
+  .show{
+    display: block !important;
+  }
+  .hide{
+    display: none;
   }
 }
 
