@@ -327,6 +327,14 @@ textarea {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+    body #logoAnimation {
+      width: auto;
+      height: 90vh;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      transform: translate(50%, -20%);
+      z-index: 999999; }
     body .loading {
       position: fixed;
       top: 0;
@@ -341,7 +349,8 @@ textarea {
         position: absolute;
         right: 50%;
         top: 0;
-        transform: translate(50%, -20%); }
+        transform: translate(50%, -20%);
+        z-index: 999999; }
       body .loading svg#wait {
         width: 250px;
         height: auto;
@@ -350,7 +359,8 @@ textarea {
         bottom: 100px;
         left: 50%;
         opacity: 1;
-        animation: fadeInAnim 2s 0s; }
+        animation: fadeInAnim 2s 0s;
+        z-index: 999999; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
@@ -1762,6 +1772,14 @@ textarea {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+    body #logoAnimation {
+      width: auto;
+      height: 90vh;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      transform: translate(50%, -20%);
+      z-index: 999999; }
     body .loading {
       position: fixed;
       top: 0;
@@ -1776,7 +1794,8 @@ textarea {
         position: absolute;
         right: 50%;
         top: 0;
-        transform: translate(50%, -20%); }
+        transform: translate(50%, -20%);
+        z-index: 999999; }
       body .loading svg#wait {
         width: 250px;
         height: auto;
@@ -1785,7 +1804,8 @@ textarea {
         bottom: 100px;
         left: 50%;
         opacity: 1;
-        animation: fadeInAnim 2s 0s; }
+        animation: fadeInAnim 2s 0s;
+        z-index: 999999; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
