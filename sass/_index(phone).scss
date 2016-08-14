@@ -556,7 +556,7 @@ body{
           transform: translate(-50%,-50%);
           input{
             width: 345px;
-            border: 5px solid  $orange !important;
+            border: 5px solid  $orange;
             font-size: 1.2rem !important;
             &:first-child{
               margin-left: 0 !important;
@@ -571,7 +571,7 @@ body{
           textarea{
             width: calc(100% - 55px);
             height: 135px;
-            border: 5px solid $orange !important;
+            border: 5px solid $orange;
             font-size: 1.2rem !important;
           }
           button {

@@ -2,7 +2,7 @@ body {
   position: relative;
 
   min-width: 768px !important;
-
+  //overflow-x: scroll;
   //draw loading SVG
   @include drawSVG(#_x31_, 1500, 1500, 5s, 0s, linear);
   @include drawSVG(#_x33_, 1000, 1000, 3s, 2.5s, linear);
@@ -82,7 +82,7 @@ body {
     section {
       width: 100vw;
       height: 100vh;
-      overflow: hidden;
+      //overflow: hidden;
     }
 
     #intro {

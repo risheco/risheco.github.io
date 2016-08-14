@@ -6,6 +6,9 @@
 @import "inputs";
 
 @media screen and (max-width: 767px){
+  @import "index(desktop)";
+}
+@media handheld and (max-width: 767px){
   @import "index(phone)";
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
