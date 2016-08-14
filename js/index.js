@@ -44,28 +44,24 @@ $(document).on('scroll', function () {
         $(".goTopBtn").fadeOut();
     }
 });
-$('#goTopBtn').click(function () {
-    $("#goToIntro").prop("checked", true);
-    $('.sectionChanger').removeClass('blue');
-});
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target[0].id == "solutions") {
-                $("#goToSolutions").prop("checked", true);
-                // $('.sectionChanger').removeClass('blue');
-                $('.sectionChanger').addClass('blue');
-            }
-            else if (target[0].id == "members") {
-                $("#goToMembers").prop("checked", true);
-                $('.sectionChanger').removeClass('blue');
-            }
-            else if (target[0].id == "about") {
-                $("#goToAbout").prop("checked", true);
-                $('.sectionChanger').addClass('blue');
-            }
+            // if (target[0].id == "solutions") {
+            //     // $("#goToSolutions").prop("checked", true);
+            //     // // $('.sectionChanger').removeClass('blue');
+            //     // $('.sectionChanger').addClass('blue');
+            // }
+            // else if (target[0].id == "members") {
+            //     // $("#goToMembers").prop("checked", true);
+            //     // $('.sectionChanger').removeClass('blue');
+            // }
+            // else if (target[0].id == "about") {
+            //     // $("#goToAbout").prop("checked", true);
+            //     // $('.sectionChanger').addClass('blue');
+            // }
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: target.offset().top
@@ -80,30 +76,30 @@ $(function () {
         $('html, body').animate({
             scrollTop: $('#intro').offset().top
         }, 1000);
-        $("#goToIntro").prop("checked", true);
-        $('.sectionChanger').removeClass('blue');
+        // $("#goToIntro").prop("checked", true);
+        // $('.sectionChanger').removeClass('blue');
     });
     $('#goToSolutions').click(function () {
         $('html, body').animate({
             scrollTop: $('#solutions').offset().top
         }, 1000);
-        $("#goToSolutions").prop("checked", true);
+        // $("#goToSolutions").prop("checked", true);
         // $('.sectionChanger').removeClass('blue');
-        $('.sectionChanger').addClass('blue');
+        // $('.sectionChanger').addClass('blue');
     });
     $('#goToMembers').click(function () {
         $('html, body').animate({
             scrollTop: $('#members').offset().top
         }, 1000);
-        $("#goToMembers").prop("checked", true);
-        $('.sectionChanger').removeClass('blue');
+        // $("#goToMembers").prop("checked", true);
+        // $('.sectionChanger').removeClass('blue');
     });
     $('#goToAbout').click(function () {
         $('html, body').animate({
             scrollTop: $('#about').offset().top
         }, 1000);
-        $("#goToAbout").prop("checked", true);
-        $('.sectionChanger').addClass('blue');
+        // $("#goToAbout").prop("checked", true);
+        // $('.sectionChanger').addClass('blue');
     });
 });
 
