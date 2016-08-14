@@ -1,5 +1,6 @@
 $(window).ready(setTimeout(function () {
     $(".loading").fadeOut(600);
+    
     $(".content").css({"display": "block"});
 }, 6000));
 

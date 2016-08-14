@@ -1,4 +1,5 @@
 body {
+  position: relative;
 
   min-width: 768px !important;
 
@@ -15,6 +16,23 @@ body {
   @include drawSVG(#_x39_, 1000, 1000, 3s, 3.1s, linear);
   @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
   @include drawSVG(#_x31_2, 1000, 1000, 2s, 5s, linear);
+
+
+  #logoAnimation {
+    //width: 400px;
+    //height: auto;
+    //position: absolute;
+    //margin-left: -200px;
+    //top: 0;
+    //left: 50%;
+    width: auto;
+    height: 95vh;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -20%);
+    z-index: 999999;
+  }
 
   .loading {
     //display: none;
@@ -42,6 +60,7 @@ body {
         right: 50%;
         top: 0;
         transform: translate(50%, -20%);
+        z-index: 999999;
       }
       &#wait {
         width: 150px;
@@ -52,6 +71,7 @@ body {
         left: 50%;
         opacity: 1;
         @include fadeIn(2s, 0s, 1);
+        z-index: 999999;
       }
 
     }

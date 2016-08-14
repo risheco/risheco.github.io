@@ -954,6 +954,7 @@ textarea {
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   body {
+    position: relative;
     min-width: 768px !important; }
     body #logoAnimation path#_x31_ {
       stroke-dasharray: 1500;
@@ -1039,6 +1040,14 @@ textarea {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+    body #logoAnimation {
+      width: auto;
+      height: 95vh;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      transform: translate(50%, -20%);
+      z-index: 999999; }
     body .loading {
       position: fixed;
       top: 0;
@@ -1053,7 +1062,8 @@ textarea {
         position: absolute;
         right: 50%;
         top: 0;
-        transform: translate(50%, -20%); }
+        transform: translate(50%, -20%);
+        z-index: 999999; }
       body .loading svg#wait {
         width: 150px;
         height: auto;
@@ -1062,7 +1072,8 @@ textarea {
         bottom: 150px;
         left: 50%;
         opacity: 1;
-        animation: fadeInAnim 2s 0s 1; }
+        animation: fadeInAnim 2s 0s 1;
+        z-index: 999999; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
@@ -2378,6 +2389,7 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   body {
+    position: relative;
     min-width: 768px !important; }
     body #logoAnimation path#_x31_ {
       stroke-dasharray: 1500;
@@ -2463,6 +2475,14 @@ textarea {
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
+    body #logoAnimation {
+      width: auto;
+      height: 95vh;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      transform: translate(50%, -20%);
+      z-index: 999999; }
     body .loading {
       position: fixed;
       top: 0;
@@ -2477,7 +2497,8 @@ textarea {
         position: absolute;
         right: 50%;
         top: 0;
-        transform: translate(50%, -20%); }
+        transform: translate(50%, -20%);
+        z-index: 999999; }
       body .loading svg#wait {
         width: 150px;
         height: auto;
@@ -2486,7 +2507,8 @@ textarea {
         bottom: 150px;
         left: 50%;
         opacity: 1;
-        animation: fadeInAnim 2s 0s 1; }
+        animation: fadeInAnim 2s 0s 1;
+        z-index: 999999; }
   @keyframes fadeInAnim {
     from {
       opacity: 0; }
