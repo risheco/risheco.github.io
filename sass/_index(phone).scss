@@ -1,11 +1,9 @@
 body{
 
   min-width: 480px !important;
-  max-width: 768px;
   margin: 0;
   padding: 0;
   background-color: $white;
-  overflow-x: scroll;
 
   @mixin fadeIn($duration,$delay){
     animation: fadeInAnim $duration $delay;

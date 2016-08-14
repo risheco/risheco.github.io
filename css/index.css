@@ -240,11 +240,9 @@ textarea {
 @media screen and (max-width: 767px) {
   body {
     min-width: 480px !important;
-    max-width: 768px;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    overflow-x: scroll; }
+    background-color: #fff; }
     body #logoAnimation path#_x31_ {
       stroke-dasharray: 1500;
       stroke-dashoffset: 1500;
@@ -1075,6 +1073,7 @@ textarea {
       height: 100vh;
       overflow: hidden; }
     body .content #intro {
+      width: 100vw;
       height: 100vh;
       position: relative;
       background-color: #444;
@@ -1665,11 +1664,9 @@ textarea {
 @media screen and (min-width: 768px) and (orientation: portrait) {
   body {
     min-width: 480px !important;
-    max-width: 768px;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    overflow-x: scroll; }
+    background-color: #fff; }
     body #logoAnimation path#_x31_ {
       stroke-dasharray: 1500;
       stroke-dashoffset: 1500;
@@ -2500,6 +2497,7 @@ textarea {
       height: 100vh;
       overflow: hidden; }
     body .content #intro {
+      width: 100vw;
       height: 100vh;
       position: relative;
       background-color: #444;

@@ -1,7 +1,6 @@
 body {
 
   min-width: 768px !important;
-  //overflow-x: scroll;
 
   //draw loading SVG
   @include drawSVG(#_x31_, 1500, 1500, 5s, 0s, linear);
@@ -67,6 +66,7 @@ body {
     }
 
     #intro {
+      width: 100vw;
       height:100vh;
       position: relative;
       background-color: $gray;
