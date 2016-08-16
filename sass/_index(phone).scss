@@ -183,7 +183,7 @@ body{
           &.scaled {
             transform: scale(1.1);
           }
-          svg {
+          svg, img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -193,12 +193,6 @@ body{
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
-            &:first-child {
-              height: 120px;
-              width: auto;
-              top: 20px;
-              left: 45%;
-            }
           }
           p {
             &.title {
@@ -230,7 +224,7 @@ body{
           color: $white;
           position: relative;
           top: 5vh;
-          svg {
+          svg, img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -240,11 +234,6 @@ body{
             -ms-transform: translateX(50%);
             -o-transform: translateX(50%);
             transform: translateX(50%);
-            &:first-child {
-              height: 85px;
-              width: auto;
-              top: 32px;
-            }
           }
           p {
             &.title {
