@@ -743,6 +743,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -1399,6 +1401,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -2187,6 +2191,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -2843,6 +2849,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -3631,6 +3639,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
