@@ -20,6 +20,12 @@ bower install
 gulp 
 ```
 
+### update content
+update content in content.json and use mustache to compile it to html
+```
+npm install mustache
+mustache content.json index.html.mustache > index.html
+```
 
 ###### Website :
 ```

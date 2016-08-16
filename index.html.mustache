@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/animation.css">
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
     <script src="js/jQuery.js"></script>
-	<script src="bower_components/mustache.js/mustache.js"></script>
 
 </head>
 <body>
@@ -371,16 +370,16 @@
     <div class="sectionChanger">
         <div class="verticalLine"></div>
         <input id="goToIntro" type="radio" name="field" value="option">
-        <label for="goToIntro"><span><span><span>ریشه</span></span></span></label>
+        <label for="goToIntro"><span><span><span>{{ sections.0 }}</span></span></span></label>
 
         <input id="goToSolutions" type="radio" name="field" value="option">
-        <label for="goToSolutions"><span><span><span>راهکارها</span></span></span></label>
+        <label for="goToSolutions"><span><span><span>{{ sections.1 }}</span></span></span></label>
 
         <input id="goToMembers" type="radio" name="field" value="option">
-        <label for="goToMembers"><span><span><span>اعضا</span></span></span></label>
+        <label for="goToMembers"><span><span><span>{{ sections.2 }}</span></span></span></label>
 
         <input id="goToAbout" type="radio" name="field" value="option">
-        <label for="goToAbout"><span><span><span>درباره</span></span></span></label>
+        <label for="goToAbout"><span><span><span>{{ sections.3 }}</span></span></span></label>
     </div>
     <section id="intro">
         <div id="pngLogo">
@@ -646,9 +645,9 @@
                     <div class="rect2"></div>
                     <div class="rect3"></div>
                 </div>
-                <p class="title">راهکار های تحت وب</p>
+                <p class="title">{{web.title}}</p>
                 <p class="text">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای
+                    {{web.desc}}
                 </p>
             </div>
         </div>
@@ -912,9 +911,9 @@
                     <div class="rect2"></div>
                     <div class="rect3"></div>
                 </div>
-                <p class="title">توسعه برنامه نویسی موبایل</p>
+                <p class="title">{{mobile.title}}</p>
                 <p class="text">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای
+                  {{mobile.desc}}
                 </p>
             </div>
         </div>
@@ -927,194 +926,304 @@
         <ul class="membersList">
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/meraj.jpg">
+                    <img src="img/developers/{{ colleagues.0.img }}.jpg">
                 </div>
                 <div class="memberInfo leftInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/meraj.jpg">
+                        <img src="img/developers/{{ colleagues.0.img }}.jpg">
                     </div>
                     <div class="Info">
                         <div class="text">
-                            <p class="name">معراج نورالدینی</p>
-                            <p class="skill">برنامه نویس اندروید</p>
+                            <p class="name">{{ colleagues.0.name }}</p>
+                            <p class="skill">{{ colleagues.0.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                یک کمال طلب. از نظر ایشون فقط جاوا زبان برنامه نویسیه و بقیه بدر نمی‌خورن
+                                {{ colleagues.0.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
-                            <li><a href="https://ir.linkedin.com/in/meraj-nouredini-09124b7a"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/MerajNouredini"><i class="fa fa-twitter"></i></a></li>
+                            {{#colleagues.0.linkedin}}
+                            <li><a href="{{{ colleagues.0.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.0.linkedin}}
+                            {{#colleagues.0.twitter}}
+                            <li><a href="{{{ colleagues.0.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.0.twitter}}
+                            {{#colleagues.0.facebook}}
+                            <li><a href="{{{ colleagues.0.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.0.facebook}}
+                            {{#colleagues.0.github}}
+                            <li><a href="{{{ colleagues.0.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.0.github}}
+                            {{#colleagues.0.stackoverflow}}
+                            <li><a href="{{{ colleagues.0.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.0.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/bardia.jpg">
+                    <img src="img/developers/{{ colleagues.1.img }}.jpg">
                 </div>
                 <div class="memberInfo leftInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/bardia.jpg">
+                        <img src="img/developers/{{ colleagues.1.img }}.jpg">
                     </div>
                    <div class="Info">
                         <div class="text">
-                            <p class="name">بردیا حیدری نژاد</p>
-                            <p class="skill">برنامه نویس iOS</p>
+                            <p class="name">{{ colleagues.1.name }}</p>
+                            <p class="skill">{{ colleagues.1.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                یک خوره کامپیوتر. از مهارت های وی میتوان به برنامه نویسی با یک دست. برنامه نویسی به صورت سر پا و برنامه نویسی با چشم بسته اشاره کرد
+                                {{ colleagues.1.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
-                            <li><a href="https://ir.linkedin.com/in/bardiaheydarinejad"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/bardia_heydari"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/bardia.heydari"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/bardia73"><i class="fa fa-github"></i></a></li>
-                            <li><a href="http://stackoverflow.com/users/2914454/bardia-heydari"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{#colleagues.1.linkedin}}
+                            <li><a href="{{{ colleagues.1.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.1.linkedin}}
+                            {{#colleagues.1.twitter}}
+                            <li><a href="{{{ colleagues.1.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.1.twitter}}
+                            {{#colleagues.1.facebook}}
+                            <li><a href="{{{ colleagues.1.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.1.facebook}}
+                            {{#colleagues.1.github}}
+                            <li><a href="{{{ colleagues.1.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.1.github}}
+                            {{#colleagues.1.stackoverflow}}
+                            <li><a href="{{{ colleagues.1.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.1.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/salar.jpg">
+                    <img src="img/developers/{{ colleagues.2.img }}.jpg">
                 </div>
                 <div class="memberInfo rightInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/salar.jpg">
+                        <img src="img/developers/{{ colleagues.2.img }}.jpg">
                     </div>
                      <div class="Info">
                         <div class="text">
-                            <p class="name">سالار نصیری</p>
-                            <p class="skill">برنامه نویس سرور</p>
+                            <p class="name">{{ colleagues.2.name }}</p>
+                            <p class="skill">{{ colleagues.2.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                عامل شکستگی اساسیه شرکت. 
+                                {{ colleagues.2.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
+                            {{#colleagues.2.linkedin}}
+                            <li><a href="{{{ colleagues.2.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.2.linkedin}}
+                            {{#colleagues.2.twitter}}
+                            <li><a href="{{{ colleagues.2.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.2.twitter}}
+                            {{#colleagues.2.facebook}}
+                            <li><a href="{{{ colleagues.2.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.2.facebook}}
+                            {{#colleagues.2.github}}
+                            <li><a href="{{{ colleagues.2.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.2.github}}
+                            {{#colleagues.2.stackoverflow}}
+                            <li><a href="{{{ colleagues.2.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.2.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/kian.jpg">
+                    <img src="img/developers/{{ colleagues.3.img }}.jpg">
                 </div>
                 <div class="memberInfo rightInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/kian.jpg">
+                        <img src="img/developers/{{ colleagues.3.img }}.jpg">
                     </div>
                    <div class="Info">
                         <div class="text">
-                            <p class="name">کیان پیمانی</p>
-                            <p class="skill">برنامه نویس رابط کاربری</p>
+                            <p class="name">{{ colleagues.3.name }}</p>
+                            <p class="skill">{{ colleagues.3.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                حداقل از لحاض قیافه شبیه هکر های توی فیلماس
+                                {{ colleagues.3.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
+                            {{#colleagues.3.linkedin}}
+                            <li><a href="{{{ colleagues.3.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.3.linkedin}}
+                            {{#colleagues.3.twitter}}
+                            <li><a href="{{{ colleagues.3.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.3.twitter}}
+                            {{#colleagues.3.facebook}}
+                            <li><a href="{{{ colleagues.3.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.3.facebook}}
+                            {{#colleagues.3.github}}
+                            <li><a href="{{{ colleagues.3.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.3.github}}
+                            {{#colleagues.3.stackoverflow}}
+                            <li><a href="{{{ colleagues.3.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.3.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/amir.jpg">
+                    <img src="img/developers/{{ colleagues.4.img }}.jpg">
                 </div>
                 <div class="memberInfo leftInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/amir.jpg">
+                        <img src="img/developers/{{ colleagues.4.img }}.jpg">
                     </div>
                      <div class="Info">
                         <div class="text">
-                            <p class="name">امیر محمد مرادی</p>
-                            <p class="skill">برنامه نویس رابط کاربری</p>
+                            <p class="name">{{ colleagues.4.name }}</p>
+                            <p class="skill">{{ colleagues.4.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                گیله مرد.
+                                {{ colleagues.4.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
+                            {{#colleagues.4.linkedin}}
+                            <li><a href="{{{ colleagues.4.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.4.linkedin}}
+                            {{#colleagues.4.twitter}}
+                            <li><a href="{{{ colleagues.4.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.4.twitter}}
+                            {{#colleagues.4.facebook}}
+                            <li><a href="{{{ colleagues.4.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.4.facebook}}
+                            {{#colleagues.4.github}}
+                            <li><a href="{{{ colleagues.4.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.4.github}}
+                            {{#colleagues.4.stackoverflow}}
+                            <li><a href="{{{ colleagues.4.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.4.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/negar.jpg">
+                    <img src="img/developers/{{ colleagues.5.img }}.jpg">
                 </div>
                 <div class="memberInfo leftInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/negar.jpg">
+                        <img src="img/developers/{{ colleagues.5.img }}.jpg">
                     </div>
                    <div class="Info">
                         <div class="text">
-                            <p class="name">نگار محمد حسن</p>
-                            <p class="skill">برنامه نویس سرور</p>
+                            <p class="name">{{ colleagues.5.name }}</p>
+                            <p class="skill">{{ colleagues.5.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                از دیوار صدا در بیاد از ایشون صدا در نمیاد
+                                {{ colleagues.5.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
+                            {{#colleagues.5.linkedin}}
+                            <li><a href="{{{ colleagues.5.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.5.linkedin}}
+                            {{#colleagues.5.twitter}}
+                            <li><a href="{{{ colleagues.5.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.5.twitter}}
+                            {{#colleagues.5.facebook}}
+                            <li><a href="{{{ colleagues.5.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.5.facebook}}
+                            {{#colleagues.5.github}}
+                            <li><a href="{{{ colleagues.5.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.5.github}}
+                            {{#colleagues.5.stackoverflow}}
+                            <li><a href="{{{ colleagues.5.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.5.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/amin.jpg">
+                    <img src="img/developers/{{ colleagues.6.img }}.jpg">
                 </div>
                 <div class="memberInfo rightInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/amin.jpg">
+                        <img src="img/developers/{{ colleagues.6.img }}.jpg">
                     </div>
                    <div class="Info">
                         <div class="text">
-                            <p class="name">محمد امین مسعودی</p>
-                            <p class="skill">طراح وب</p>
+                            <p class="name">{{ colleagues.6.name }}</p>
+                            <p class="skill">{{ colleagues.6.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                ترکیبی شگرف از یک مهندس و یک هنرمند. با وجود سیبیل کلفتش موجود بی آزاریه
+                                {{ colleagues.6.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
-                            <li><a href="www.linkedin.com/in/maminmasoudi"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/m_amin_masoudi"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/MohammadAminMsoudi"><i class="fa fa-facebook"></i></a></li>
+                            {{#colleagues.6.linkedin}}
+                            <li><a href="{{{ colleagues.6.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.6.linkedin}}
+                            {{#colleagues.6.twitter}}
+                            <li><a href="{{{ colleagues.6.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.6.twitter}}
+                            {{#colleagues.6.facebook}}
+                            <li><a href="{{{ colleagues.6.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.6.facebook}}
+                            {{#colleagues.6.github}}
+                            <li><a href="{{{ colleagues.6.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.6.github}}
+                            {{#colleagues.6.stackoverflow}}
+                            <li><a href="{{{ colleagues.6.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.6.stackoverflow}}
                         </ul>
                     </div>
                 </div>
             </li>
             <li class="member">
                 <div class="memeberImg">
-                    <img src="img/developers/hamid.jpg">
+                    <img src="img/developers/{{ colleagues.7.img }}.jpg">
                 </div>
                 <div class="memberInfo rightInfo">
                     <div class="memeberImg">
-                        <img src="img/developers/hamid.jpg">
+                        <img src="img/developers/{{ colleagues.7.img }}.jpg">
                     </div>
                     <div class="Info">
                         <div class="text">
-                            <p class="name">حمید فیض آبادی</p>
-                            <p class="skill">برنامه نویس سرور</p>
+                            <p class="name">{{ colleagues.7.name }}</p>
+                            <p class="skill">{{ colleagues.7.title }}</p>
                             <p class="quote">
                                 <i class="fa fa-quote-right"></i>
-                                بزن در رو ترین برنامه نویس
+                                {{ colleagues.7.desc }}
                                 <i class="fa fa-quote-left"></i>
                             </p>
                         </div>
                         <ul class="memberSocials">
+                            {{#colleagues.7.linkedin}}
+                            <li><a href="{{{ colleagues.7.linkedin }}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/colleagues.7.linkedin}}
+                            {{#colleagues.7.twitter}}
+                            <li><a href="{{{ colleagues.7.twitter }}}"><i class="fa fa-twitter"></i></a></li>
+                            {{/colleagues.7.twitter}}
+                            {{#colleagues.7.facebook}}
+                            <li><a href="{{{ colleagues.7.facebook }}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/colleagues.7.facebook}}
+                            {{#colleagues.7.github}}
+                            <li><a href="{{{ colleagues.7.github }}}"><i class="fa fa-github"></i></a></li>
+                            {{/colleagues.7.github}}
+                            {{#colleagues.7.stackoverflow}}
+                            <li><a href="{{{ colleagues.7.stackoverflow }}}"><i class="fa fa-stack-overflow"></i></a></li>
+                            {{/colleagues.7.stackoverflow}}
                         </ul>
                     </div>
                 </div>

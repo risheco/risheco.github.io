@@ -1,0 +1,103 @@
+{
+  "mobile": {
+    "title": "توسعه برنامه نویسی موبایل",
+    "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای"
+  },
+  "web": {
+    "title": "راهکار های تحت وب",
+    "desc": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای"
+  },
+  "sections": [
+    "ریشه",
+    "راهکارها",
+    "اعضا",
+    "درباره"
+  ],
+  "colleagues": [
+    {
+      "img": "meraj",
+      "name": "معراج نورالدینی",
+      "title": "برنامه نویس اندروید",
+      "desc": "یک کمال طلب. از نظر ایشون فقط جاوا زبان برنامه نویسیه و بقیه بدر نمی‌خورن",
+      "linkedin": "https://ir.linkedin.com/in/meraj-nouredini-09124b7a",
+      "twitter": "https://twitter.com/MerajNouredini"
+    },
+    {
+      "img": "bardia",
+      "name": "بردیا حیدری نژاد",
+      "title": "برنامه نویس iOS",
+      "desc": "یک خوره کامپیوتر. از مهارت های وی میتوان به برنامه نویسی با یک دست. برنامه نویسی به صورت سر پا و برنامه نویسی با چشم بسته اشاره کرد",
+      "linkedin": "https://ir.linkedin.com/in/bardiaheydarinejad",
+      "twitter": "https://twitter.com/bardia_heydari",
+      "facebook": "https://www.facebook.com/bardia.heydari",
+      "github": "https://github.com/bardia73",
+      "stackoverflow": "http://stackoverflow.com/users/2914454/bardia-heydari"
+    },
+    {
+      "img": "salar",
+      "name": "سالار نصیری",
+      "title": "برنامه نویس سرور",
+      "desc": "عامل شکستگی اساسیه شرکت. ",
+      "linkedin": "",
+      "twitter": "",
+      "facebook": "",
+      "github": "",
+      "stackoverflow": ""
+    },
+    {
+      "img": "kian",
+      "name": "کیان پیمانی",
+      "title": "برنامه نویس رابط کاربری",
+      "desc": "حداقل از لحاض قیافه شبیه هکر های توی فیلماس",
+      "linkedin": "",
+      "twitter": "",
+      "facebook": "",
+      "github": "",
+      "stackoverflow": ""
+    },
+    {
+      "img": "amir",
+      "name": "امیر محمد مرادی",
+      "title": "برنامه نویس رابط کاربری",
+      "desc": "گیله مرد.",
+      "linkedin": "",
+      "twitter": "",
+      "facebook": "",
+      "github": "",
+      "stackoverflow": ""
+    },
+    {
+      "img": "negar",
+      "name": "نگار محمد حسن",
+      "title": "برنامه نویس سرور",
+      "desc": "از دیوار صدا در بیاد از ایشون صدا در نمیاد",
+      "linkedin": "",
+      "twitter": "",
+      "facebook": "",
+      "github": "",
+      "stackoverflow": ""
+    },
+    {
+      "img": "amin",
+      "name": "محمد امین مسعودی",
+      "title": "طراح وب",
+      "desc": "ترکیبی شگرف از یک مهندس و یک هنرمند. با وجود سیبیل کلفتش موجود بی آزاریه",
+      "linkedin": "www.linkedin.com/in/maminmasoudi",
+      "twitter": "https://twitter.com/m_amin_masoudi",
+      "facebook": "https://www.facebook.com/MohammadAminMsoudi",
+      "instagram": "https://www.instagram.com/m_amin_masoudi",
+      "website": "www.aminmasoudi.ir"
+    },
+    {
+      "img": "hamid",
+      "name": "حمید فیض آبادی",
+      "title": "برنامه نویس سرور",
+      "desc": "بی عصاب و وسواسی سر کد هایی که مینویسه",
+      "linkedin": "",
+      "twitter": "",
+      "facebook": "",
+      "github": "",
+      "stackoverflow": ""
+    }
+  ]
+}
