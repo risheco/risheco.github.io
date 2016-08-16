@@ -32,8 +32,8 @@ body{
   //}
 
   @include drawSVG(#_x31_, 1500, 1500, 5s, 0s, linear);
-  @include drawSVG(#_x33_, 1000, 1000, 3s, 2.5s, linear);
-  @include drawSVG(#_x34_, 1000, 1000, 2s, 2.4s, linear);
+  @include drawSVG(#_x33_, 1000, 1000, 3s, 2.8s, linear);
+  @include drawSVG(#_x34_, 1000, 1000, 2s, 2.7s, linear);
   @include drawSVG(#_x32_, 1000, 1000, 3s, 2.8s, linear);
   @include drawSVG(#_x35_, 1000, 1000, 3s, 3s, linear);
   @include drawSVG(#_x36_, 1000, 1000, 3s, 3.8s, linear);
@@ -90,7 +90,7 @@ body{
         height: auto;
         position: absolute;
         margin-left: -125px;
-        bottom: 100px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         @include fadeIn(2s,0s);
