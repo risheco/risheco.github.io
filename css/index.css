@@ -366,7 +366,8 @@ textarea {
       opacity: 1; } }
     body .content section {
       width: 100vw;
-      height: 100vh; }
+      height: 100vh;
+      overflow: hidden; }
     body .content #intro {
       width: 100vw;
       height: 100vh;
@@ -1810,7 +1811,8 @@ textarea {
       opacity: 1; } }
     body .content section {
       width: 100vw;
-      height: 100vh; }
+      height: 100vh;
+      overflow: hidden; }
     body .content #intro {
       width: 100vw;
       height: 100vh;
@@ -3254,7 +3256,8 @@ textarea {
       opacity: 1; } }
     body .content section {
       width: 100vw;
-      height: 100vh; }
+      height: 100vh;
+      overflow: hidden; }
     body .content #intro {
       width: 100vw;
       height: 100vh;
