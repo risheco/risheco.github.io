@@ -354,7 +354,7 @@ textarea {
         height: auto;
         position: absolute;
         margin-left: -75px;
-        bottom: 150px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         animation: fadeInAnim 2s 0s 1;
@@ -438,7 +438,7 @@ textarea {
           left: 0; }
           body .content #solutions #web .web-content.scaled {
             transform: scale(1.1); }
-          body .content #solutions #web .web-content svg {
+          body .content #solutions #web .web-content svg, body .content #solutions #web .web-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -448,11 +448,6 @@ textarea {
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%); }
-            body .content #solutions #web .web-content svg:first-child {
-              height: 120px;
-              width: auto;
-              top: 20px;
-              left: 45%; }
           body .content #solutions #web .web-content div.contentInMac {
             position: absolute;
             width: 250px;
@@ -518,7 +513,7 @@ textarea {
           color: #fff;
           position: relative;
           top: 10vh; }
-          body .content #solutions #app .app-content svg {
+          body .content #solutions #app .app-content svg, body .content #solutions #app .app-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -528,10 +523,6 @@ textarea {
             -ms-transform: translateX(50%);
             -o-transform: translateX(50%);
             transform: translateX(50%); }
-            body .content #solutions #app .app-content svg:first-child {
-              height: 85px;
-              width: auto;
-              top: 32px; }
           body .content #solutions #app .app-content div.contentInMac {
             position: absolute;
             width: 100px;
@@ -744,6 +735,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -973,14 +966,14 @@ textarea {
     body #logoAnimation path#_x33_ {
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: dash 3s linear forwards 2.5s; }
+      animation: dash 3s linear forwards 2.8s; }
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
     body #logoAnimation path#_x34_ {
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: dash 2s linear forwards 2.4s; }
+      animation: dash 2s linear forwards 2.7s; }
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
@@ -1076,7 +1069,7 @@ textarea {
         height: auto;
         position: absolute;
         margin-left: -125px;
-        bottom: 100px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         animation: fadeInAnim 2s 0s;
@@ -1152,7 +1145,7 @@ textarea {
         left: 0; }
         body .content #solutions #web .web-content.scaled {
           transform: scale(1.1); }
-        body .content #solutions #web .web-content svg {
+        body .content #solutions #web .web-content svg, body .content #solutions #web .web-content img {
           position: absolute;
           height: 300px;
           width: auto;
@@ -1162,11 +1155,6 @@ textarea {
           -ms-transform: translateX(-50%);
           -o-transform: translateX(-50%);
           transform: translateX(-50%); }
-          body .content #solutions #web .web-content svg:first-child {
-            height: 120px;
-            width: auto;
-            top: 20px;
-            left: 45%; }
         body .content #solutions #web .web-content p.title {
           width: 100%;
           text-align: center;
@@ -1189,7 +1177,7 @@ textarea {
         color: #fff;
         position: relative;
         top: 5vh; }
-        body .content #solutions #app .app-content svg {
+        body .content #solutions #app .app-content svg, body .content #solutions #app .app-content img {
           position: absolute;
           height: 300px;
           width: auto;
@@ -1199,10 +1187,6 @@ textarea {
           -ms-transform: translateX(50%);
           -o-transform: translateX(50%);
           transform: translateX(50%); }
-          body .content #solutions #app .app-content svg:first-child {
-            height: 85px;
-            width: auto;
-            top: 32px; }
         body .content #solutions #app .app-content p.title {
           width: 100%;
           text-align: center;
@@ -1400,6 +1384,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -1799,7 +1785,7 @@ textarea {
         height: auto;
         position: absolute;
         margin-left: -75px;
-        bottom: 150px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         animation: fadeInAnim 2s 0s 1;
@@ -1883,7 +1869,7 @@ textarea {
           left: 0; }
           body .content #solutions #web .web-content.scaled {
             transform: scale(1.1); }
-          body .content #solutions #web .web-content svg {
+          body .content #solutions #web .web-content svg, body .content #solutions #web .web-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -1893,11 +1879,6 @@ textarea {
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%); }
-            body .content #solutions #web .web-content svg:first-child {
-              height: 120px;
-              width: auto;
-              top: 20px;
-              left: 45%; }
           body .content #solutions #web .web-content div.contentInMac {
             position: absolute;
             width: 250px;
@@ -1963,7 +1944,7 @@ textarea {
           color: #fff;
           position: relative;
           top: 10vh; }
-          body .content #solutions #app .app-content svg {
+          body .content #solutions #app .app-content svg, body .content #solutions #app .app-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -1973,10 +1954,6 @@ textarea {
             -ms-transform: translateX(50%);
             -o-transform: translateX(50%);
             transform: translateX(50%); }
-            body .content #solutions #app .app-content svg:first-child {
-              height: 85px;
-              width: auto;
-              top: 32px; }
           body .content #solutions #app .app-content div.contentInMac {
             position: absolute;
             width: 100px;
@@ -2189,6 +2166,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -2418,14 +2397,14 @@ textarea {
     body #logoAnimation path#_x33_ {
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: dash 3s linear forwards 2.5s; }
+      animation: dash 3s linear forwards 2.8s; }
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
     body #logoAnimation path#_x34_ {
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: dash 2s linear forwards 2.4s; }
+      animation: dash 2s linear forwards 2.7s; }
   @keyframes dash {
     to {
       stroke-dashoffset: 0; } }
@@ -2521,7 +2500,7 @@ textarea {
         height: auto;
         position: absolute;
         margin-left: -125px;
-        bottom: 100px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         animation: fadeInAnim 2s 0s;
@@ -2597,7 +2576,7 @@ textarea {
         left: 0; }
         body .content #solutions #web .web-content.scaled {
           transform: scale(1.1); }
-        body .content #solutions #web .web-content svg {
+        body .content #solutions #web .web-content svg, body .content #solutions #web .web-content img {
           position: absolute;
           height: 300px;
           width: auto;
@@ -2607,11 +2586,6 @@ textarea {
           -ms-transform: translateX(-50%);
           -o-transform: translateX(-50%);
           transform: translateX(-50%); }
-          body .content #solutions #web .web-content svg:first-child {
-            height: 120px;
-            width: auto;
-            top: 20px;
-            left: 45%; }
         body .content #solutions #web .web-content p.title {
           width: 100%;
           text-align: center;
@@ -2634,7 +2608,7 @@ textarea {
         color: #fff;
         position: relative;
         top: 5vh; }
-        body .content #solutions #app .app-content svg {
+        body .content #solutions #app .app-content svg, body .content #solutions #app .app-content img {
           position: absolute;
           height: 300px;
           width: auto;
@@ -2644,10 +2618,6 @@ textarea {
           -ms-transform: translateX(50%);
           -o-transform: translateX(50%);
           transform: translateX(50%); }
-          body .content #solutions #app .app-content svg:first-child {
-            height: 85px;
-            width: auto;
-            top: 32px; }
         body .content #solutions #app .app-content p.title {
           width: 100%;
           text-align: center;
@@ -2845,6 +2815,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;
@@ -3244,7 +3216,7 @@ textarea {
         height: auto;
         position: absolute;
         margin-left: -75px;
-        bottom: 150px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         animation: fadeInAnim 2s 0s 1;
@@ -3328,7 +3300,7 @@ textarea {
           left: 0; }
           body .content #solutions #web .web-content.scaled {
             transform: scale(1.1); }
-          body .content #solutions #web .web-content svg {
+          body .content #solutions #web .web-content svg, body .content #solutions #web .web-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -3338,11 +3310,6 @@ textarea {
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%); }
-            body .content #solutions #web .web-content svg:first-child {
-              height: 120px;
-              width: auto;
-              top: 20px;
-              left: 45%; }
           body .content #solutions #web .web-content div.contentInMac {
             position: absolute;
             width: 250px;
@@ -3408,7 +3375,7 @@ textarea {
           color: #fff;
           position: relative;
           top: 10vh; }
-          body .content #solutions #app .app-content svg {
+          body .content #solutions #app .app-content svg, body .content #solutions #app .app-content img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -3418,10 +3385,6 @@ textarea {
             -ms-transform: translateX(50%);
             -o-transform: translateX(50%);
             transform: translateX(50%); }
-            body .content #solutions #app .app-content svg:first-child {
-              height: 85px;
-              width: auto;
-              top: 32px; }
           body .content #solutions #app .app-content div.contentInMac {
             position: absolute;
             width: 100px;
@@ -3634,6 +3597,8 @@ textarea {
                     cursor: pointer; }
                     body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li:hover {
                       color: #ff9933; }
+                    body .content #members ul.membersList .member .memberInfo .Info ul.memberSocials li a {
+                      color: #fff; }
       body .content #members .addUser {
         position: absolute;
         bottom: 50%;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="914.719px" viewBox="0 0 1000 914.719" enable-background="new 0 0 1000 914.719" xml:space="preserve">
+<g id="iMac">
+	
+		<rect id="lcd" x="47.5" y="60.719" fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" width="903" height="507"/>
+	<g id="body">
+		<path fill="#333333" d="M969.699,10.219C980.727,10.219,990,18.972,990,30v669.681c0,11.028-9.273,19.538-20.301,19.538H30.301
+			c-11.028,0-20.301-8.51-20.301-19.538V30c0-11.028,9.273-19.781,20.301-19.781H970 M969.699,0.219H30.301
+			C13.801,0.219,0,13.5,0,30v669.681c0,16.5,13.801,29.538,30.301,29.538h939.398c16.5,0,30.301-13.038,30.301-29.538V30
+			C1000,13.5,986.199,0.219,969.699,0.219L969.699,0.219z"/>
+	</g>
+	
+		<line id="separatore" fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" x1="0" y1="625.719" x2="1000" y2="625.719"/>
+	<circle id="circle" fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" cx="500.051" cy="676.977" r="24.082"/>
+	<g id="base">
+		<g>
+			<polyline fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" points="348.243,817.719 346.999,724.719 
+				648.022,724.719 649.267,817.886 			"/>
+			<path fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" d="M348.243,817.385
+				c0,33.25-25.71,60.221-58.96,60.221"/>
+			<path fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" d="M710.716,877.606
+				c-33.25,0-61.449-26.971-61.449-60.221"/>
+		</g>
+		<rect x="289.5" y="878.719" fill="none" stroke="#333333" stroke-width="5" stroke-miterlimit="10" width="421" height="36"/>
+	</g>
+</g>
+</svg>

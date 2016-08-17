@@ -67,7 +67,7 @@ body {
         height: auto;
         position: absolute;
         margin-left: -75px;
-        bottom: 150px;
+        bottom: 5vh;
         left: 50%;
         opacity: 1;
         @include fadeIn(2s, 0s, 1);
@@ -168,7 +168,7 @@ body {
           &.scaled {
             transform: scale(1.1);
           }
-          svg {
+          svg,img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -178,12 +178,6 @@ body {
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
-            &:first-child {
-              height: 120px;
-              width: auto;
-              top: 20px;
-              left: 45%;
-            }
           }
           div.contentInMac{
             position: absolute;
@@ -258,7 +252,7 @@ body {
           color: $white;
           position: relative;
           top: 10vh;
-          svg {
+          svg, img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -268,11 +262,6 @@ body {
             -ms-transform: translateX(50%);
             -o-transform: translateX(50%);
             transform: translateX(50%);
-            &:first-child {
-              height: 85px;
-              width: auto;
-              top: 32px;
-            }
           }
           div.contentInMac{
             position: absolute;
@@ -531,6 +520,9 @@ body {
                     cursor: pointer;
                     &:hover{
                       color: $orange;
+                    }
+                    a{
+                      color: $white;
                     }
                   }
                 }

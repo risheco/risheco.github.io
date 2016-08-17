@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "mustache.js": "mustache#^2.2.1"
   }
 }
