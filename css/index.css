@@ -61,7 +61,8 @@ body {
   background-color: #fff;
   font-family: "iransans" !important; }
   body a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fff; }
 
 @media screen and (max-width: 767px) {
   .button {
@@ -649,8 +650,8 @@ textarea {
           transform: translate(50%, -50%); }
           body .content #members ul.membersList .member {
             position: relative;
-            width: calc(660px/4);
-            height: calc(660px/4);
+            width: calc(660px / 4);
+            height: calc(660px / 4);
             margin: 5px; }
             body .content #members ul.membersList .member > .memeberImg {
               width: calc(100% - 3px);
@@ -688,8 +689,8 @@ textarea {
                 body .content #members ul.membersList .member .memberInfo.leftInfo .Info {
                   float: left; }
               body .content #members ul.membersList .member .memberInfo .memeberImg {
-                width: calc(660px/4);
-                height: calc(660px/4); }
+                width: calc(660px / 4);
+                height: calc(660px / 4); }
                 body .content #members ul.membersList .member .memberInfo .memeberImg img {
                   width: calc(100% - 3px);
                   height: calc(100% - 3px);
@@ -871,8 +872,20 @@ textarea {
               body .content #about .socialNetworks div ul li:first-child {
                 border-left: 2px solid #fff;
                 padding-left: 30px; }
-              body .content #about .socialNetworks div ul li:hover {
-                color: #339999; }
+                body .content #about .socialNetworks div ul li:first-child a:hover {
+                  color: #ff9933;
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  -ms-transition: all 0.2s;
+                  -o-transition: all 0.2s;
+                  transition: all 0.2s; }
+              body .content #about .socialNetworks div ul li a:hover {
+                color: #339999;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s; }
     body .goDownBtn {
       position: absolute;
       right: 50%;
@@ -2080,8 +2093,8 @@ textarea {
           transform: translate(50%, -50%); }
           body .content #members ul.membersList .member {
             position: relative;
-            width: calc(660px/4);
-            height: calc(660px/4);
+            width: calc(660px / 4);
+            height: calc(660px / 4);
             margin: 5px; }
             body .content #members ul.membersList .member > .memeberImg {
               width: calc(100% - 3px);
@@ -2119,8 +2132,8 @@ textarea {
                 body .content #members ul.membersList .member .memberInfo.leftInfo .Info {
                   float: left; }
               body .content #members ul.membersList .member .memberInfo .memeberImg {
-                width: calc(660px/4);
-                height: calc(660px/4); }
+                width: calc(660px / 4);
+                height: calc(660px / 4); }
                 body .content #members ul.membersList .member .memberInfo .memeberImg img {
                   width: calc(100% - 3px);
                   height: calc(100% - 3px);
@@ -2302,8 +2315,20 @@ textarea {
               body .content #about .socialNetworks div ul li:first-child {
                 border-left: 2px solid #fff;
                 padding-left: 30px; }
-              body .content #about .socialNetworks div ul li:hover {
-                color: #339999; }
+                body .content #about .socialNetworks div ul li:first-child a:hover {
+                  color: #ff9933;
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  -ms-transition: all 0.2s;
+                  -o-transition: all 0.2s;
+                  transition: all 0.2s; }
+              body .content #about .socialNetworks div ul li a:hover {
+                color: #339999;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s; }
     body .goDownBtn {
       position: absolute;
       right: 50%;
@@ -3511,8 +3536,8 @@ textarea {
           transform: translate(50%, -50%); }
           body .content #members ul.membersList .member {
             position: relative;
-            width: calc(660px/4);
-            height: calc(660px/4);
+            width: calc(660px / 4);
+            height: calc(660px / 4);
             margin: 5px; }
             body .content #members ul.membersList .member > .memeberImg {
               width: calc(100% - 3px);
@@ -3550,8 +3575,8 @@ textarea {
                 body .content #members ul.membersList .member .memberInfo.leftInfo .Info {
                   float: left; }
               body .content #members ul.membersList .member .memberInfo .memeberImg {
-                width: calc(660px/4);
-                height: calc(660px/4); }
+                width: calc(660px / 4);
+                height: calc(660px / 4); }
                 body .content #members ul.membersList .member .memberInfo .memeberImg img {
                   width: calc(100% - 3px);
                   height: calc(100% - 3px);
@@ -3733,8 +3758,20 @@ textarea {
               body .content #about .socialNetworks div ul li:first-child {
                 border-left: 2px solid #fff;
                 padding-left: 30px; }
-              body .content #about .socialNetworks div ul li:hover {
-                color: #339999; }
+                body .content #about .socialNetworks div ul li:first-child a:hover {
+                  color: #ff9933;
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  -ms-transition: all 0.2s;
+                  -o-transition: all 0.2s;
+                  transition: all 0.2s; }
+              body .content #about .socialNetworks div ul li a:hover {
+                color: #339999;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s; }
     body .goDownBtn {
       position: absolute;
       right: 50%;
