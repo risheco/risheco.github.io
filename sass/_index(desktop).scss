@@ -17,7 +17,6 @@ body {
   @include drawSVG(#_x31_0, 1000, 1000, 2.5s, 3.15s, linear);
   @include drawSVG(#_x31_2, 1000, 1000, 2s, 5s, linear);
 
-
   #logoAnimation {
     //width: 400px;
     //height: auto;
@@ -87,7 +86,7 @@ body {
 
     #intro {
       width: 100vw;
-      height:100vh;
+      height: 100vh;
       position: relative;
       background-color: $gray;
       background: url("../img/bg-cr.jpg") center bottom no-repeat;
@@ -151,9 +150,9 @@ body {
     }
 
     #solutions {
-      height:100vh;
+      height: 100vh;
       position: relative;
-      top:0;
+      top: 0;
       #web {
         background-color: $white;
         height: 100%;
@@ -168,7 +167,7 @@ body {
           &.scaled {
             transform: scale(1.1);
           }
-          svg,img {
+          svg, img {
             position: absolute;
             height: 300px;
             width: auto;
@@ -179,7 +178,7 @@ body {
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
           }
-          div.contentInMac{
+          div.contentInMac {
             position: absolute;
             width: 250px;
             //background-color: #cccccc;
@@ -192,14 +191,14 @@ body {
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
             float: left;
-            .rect1{
+            .rect1 {
               display: none;
               width: 100%;
               background-color: #ccc;
               height: 40px;
               float: left;
             }
-            .rect2{
+            .rect2 {
               display: none;
               width: 30%;
               margin-right: 10px;
@@ -208,7 +207,7 @@ body {
               background-color: $orange;
               float: left;
             }
-            .rect3{
+            .rect3 {
               display: none;
               width: calc(70% - 10px);
               height: 95px;
@@ -263,7 +262,7 @@ body {
             -o-transform: translateX(50%);
             transform: translateX(50%);
           }
-          div.contentInMac{
+          div.contentInMac {
             position: absolute;
             width: 100px;
             height: 210px;
@@ -275,14 +274,14 @@ body {
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
             float: left;
-            .rect1{
+            .rect1 {
               display: none;
               width: 100%;
               background-color: #ccc;
               height: 40px;
               float: left;
             }
-            .rect2{
+            .rect2 {
               display: none;
               width: 100%;
               margin-top: 10px;
@@ -290,7 +289,7 @@ body {
               background-color: $orange;
               float: left;
             }
-            .rect3{
+            .rect3 {
               display: none;
               width: 100%;
               height: 90px;
@@ -379,18 +378,18 @@ body {
     #members {
       height: 100vh;
       position: relative;
-      top:0;
-      li{
+      top: 0;
+      li {
         display: inline-block;
       }
       background: url("../img/m-bg.jpg") center bottom no-repeat;
       background-size: 100% 100%;
-      .memberTitle{
+      .memberTitle {
         position: absolute;
         font-size: 2.5rem;
         color: $white;
         word-spacing: -8px;
-        right:50%;
+        right: 50%;
         top: 50%;
         margin-top: -280px;
         -webkit-transform: translateX(50%);
@@ -399,31 +398,31 @@ body {
         -o-transform: translateX(50%);
         transform: translateX(50%);
       }
-      ul{
+      ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        &.membersList{
+        &.membersList {
           position: absolute;
           width: 715px;
           top: 50%;
-          right:50%;
-          -webkit-transform: translate(50%,-50%);
-          -moz-transform: translate(50%,-50%);
-          -ms-transform: translate(50%,50%);
-          -o-transform: translate(50%,-50%);
-          transform: translate(50%,-50%);
-          .member{
+          right: 50%;
+          -webkit-transform: translate(50%, -50%);
+          -moz-transform: translate(50%, -50%);
+          -ms-transform: translate(50%, 50%);
+          -o-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+          .member {
             position: relative;
-            width: calc(660px/4);
-            height: calc(660px/4);
+            width: calc(660px / 4);
+            height: calc(660px / 4);
             margin: 5px;
-            &>.memeberImg{
+            & > .memeberImg {
               width: calc(100% - 3px);
               height: calc(100% - 3px);
               border: 3px solid $orange !important;
               background-color: $orange;
-              img{
+              img {
                 opacity: 0.9;
                 width: 100%;
                 height: 100%;
@@ -431,7 +430,7 @@ body {
                 filter: grayscale(90%);
               }
             }
-            .memberInfo{
+            .memberInfo {
               z-index: 100;
               //opacity: 0;
               display: none;
@@ -442,31 +441,31 @@ body {
               box-sizing: content-box;
               background-color: $blue;
               //transition: all ease 0.5s;
-              &.rightInfo{
+              &.rightInfo {
                 top: -10px;
                 left: -10px;
-                .memeberImg{
+                .memeberImg {
                   float: left;
                 }
-                .Info{
+                .Info {
                   float: right;
                 }
               }
-              &.leftInfo{
-                top:-10px;
+              &.leftInfo {
+                top: -10px;
                 right: -10px;
-                .memeberImg{
+                .memeberImg {
                   float: right;
                 }
-                .Info{
+                .Info {
                   float: left;
                 }
               }
-              .memeberImg{
+              .memeberImg {
                 //background-color: $orange;
-                width: calc(660px/4);
-                height: calc(660px/4);
-                img{
+                width: calc(660px / 4);
+                height: calc(660px / 4);
+                img {
                   width: calc(100% - 3px);
                   height: calc(100% - 3px);
                   border: 3px solid $blue;
@@ -481,47 +480,47 @@ body {
                   height: calc(100% - 30px - 10px);
                   margin-top: 5px;
                   margin-bottom: 0;
-                  .name{
+                  .name {
                     font-size: 1.1rem;
                     //font-weight: 500;
                     border-right: solid 5px $orange;
                     padding-right: 15px !important;
                     margin-right: 5px !important;
                   }
-                  .skill{
+                  .skill {
                     font-size: 0.9rem;
                     margin-bottom: 10px !important;
                     border-right: solid 5px $orange;
                     padding-right: 15px !important;
                     margin-right: 5px !important;
                   }
-                  .quote{
+                  .quote {
                     font-size: 0.8rem;
                     font-style: italic;
                     font-weight: 200;
                     margin-right: 5px !important;
-                    i{
+                    i {
                       color: $orange;
                       margin: 5px 0px !important;
                     }
                   }
-                  p{
+                  p {
                     margin: 0 !important;
                   }
                 }
-                ul.memberSocials{
+                ul.memberSocials {
                   text-align: center;
-                  li{
+                  li {
                     margin: 5px;
                     width: 30px;
                     height: 30px;
                     color: $white;
                     transition: all 0.5s;
                     cursor: pointer;
-                    &:hover{
+                    &:hover {
                       color: $orange;
                     }
-                    a{
+                    a {
                       color: $white;
                     }
                   }
@@ -533,8 +532,8 @@ body {
       }
       .addUser {
         position: absolute;
-        bottom:50%;
-        right:50%;
+        bottom: 50%;
+        right: 50%;
         margin-bottom: -240px;
         -webkit-transform: translateX(50%);
         -moz-transform: translateX(50%);
@@ -543,15 +542,15 @@ body {
         transform: translateX(50%);
         width: 105px;
         height: 45px;
-        &:hover span{
-          color: darken($blue,10%) !important;
+        &:hover span {
+          color: darken($blue, 10%) !important;
           -webkit-transition: all ease 0.5s;
           -moz-transition: all ease 0.5s;
           -ms-transition: all ease 0.5s;
           -o-transition: all ease 0.5s;
           transition: all ease 0.5s;
         }
-        span{
+        span {
           color: $blue !important;
           font-family: "iransans";
           line-height: 40px;
@@ -569,16 +568,16 @@ body {
     #about {
       height: 100vh;
       position: relative;
-      top:0;
-      .contactUs{
+      top: 0;
+      .contactUs {
         position: relative;
         width: 100%;
         height: 60vh;
         background-color: $white;
-        p{
+        p {
           position: absolute;
-          right:50%;
-          top:3vh;
+          right: 50%;
+          top: 3vh;
           -webkit-transform: translateX(50%);
           -moz-transform: translateX(50%);
           -ms-transform: translateX(50%);
@@ -587,33 +586,33 @@ body {
         }
         form {
           width: 500px;
-          height:auto ;
+          height: auto;
           position: absolute;
-          top:50%;
+          top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%,-50%);
-          -moz-transform: translate(-50%,-50%);
-          -ms-transform: translate(-50%,-50%);
-          -o-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-          input{
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          input {
             width: 205px;
-            &:first-child{
+            &:first-child {
               margin-left: 0 !important;
               float: right;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
               margin-right: 0 !important;
               float: left;
             }
           }
-          textarea{
+          textarea {
             width: calc(100% - 55px);
             height: 135px;
           }
           button {
             position: absolute;
-            right:50%;
+            right: 50%;
             -webkit-transform: translateX(50%);
             -moz-transform: translateX(50%);
             -ms-transform: translateX(50%);
@@ -622,38 +621,38 @@ body {
           }
         }
       }
-      .socialNetworks{
+      .socialNetworks {
         position: relative;
         width: 100%;
         height: 40vh;
         background-color: $gray;
         overflow: hidden;
-        &::after{
+        &::after {
           content: '';
           position: absolute;
-          top:0;
+          top: 0;
           left: 0;
           border-left: 50vw solid $white;
-          border-top:40px solid $white;
-          border-right:50vw solid transparent;
-          border-bottom:40px solid transparent;
+          border-top: 40px solid $white;
+          border-right: 50vw solid transparent;
+          border-bottom: 40px solid transparent;
         }
         img {
           height: 70vh;
           position: absolute;
           bottom: 50px;
-          right:100px;
+          right: 100px;
           opacity: 0.2;
         }
-        div{
+        div {
           position: absolute;
           right: 50%;
           top: 60%;
-          -webkit-transform: translate(50%,-50%);
-          -moz-transform: translate(50%,-50%);
-          -ms-transform: translate(50%,-50%);
-          -o-transform: translate(50%,-50%);
-          transform: translate(50%,-50%);
+          -webkit-transform: translate(50%, -50%);
+          -moz-transform: translate(50%, -50%);
+          -ms-transform: translate(50%, -50%);
+          -o-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
           width: 500px;
           height: auto;
           text-align: center;
@@ -661,13 +660,13 @@ body {
             color: white;
             text-align: justify;
           }
-          ul{
+          ul {
             padding: 0;
             margin: 0 10% !important;
             width: 80%;
             list-style: none;
-            border-top: 2px solid $blue ;
-            li{
+            border-top: 2px solid $blue;
+            li {
               display: inline-block;
               color: $white;
               margin: 15px;
@@ -677,15 +676,29 @@ body {
               -ms-transition: all 0.5s;
               -o-transition: all 0.5s;
               transition: all 0.5s;
-              i{
+              i {
                 font-size: 1.5em !important;
               }
-              &:first-child{
+              &:first-child {
                 border-left: 2px solid $white;
                 padding-left: 30px;
+
+                a:hover {
+                  color: $orange;
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  -ms-transition: all 0.2s;
+                  -o-transition: all 0.2s;
+                  transition: all 0.2s;
+                }
               }
-              &:hover{
+              a:hover {
                 color: $blue;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
               }
             }
           }
@@ -698,7 +711,7 @@ body {
   .goDownBtn {
     position: absolute;
     right: 50%;
-    bottom:2vh;
+    bottom: 2vh;
     transform: translateX(50%);
   }
 
@@ -727,7 +740,7 @@ body {
     width: auto;
     color: $white;
     z-index: 9999;
-    &.blue{
+    &.blue {
       color: $blue;
       input[type=radio]:not(old) + label > span {
         background-color: $blue !important;
@@ -790,10 +803,10 @@ body {
     }
   }
 
-  .show{
+  .show {
     display: block !important;
   }
-  .hide{
+  .hide {
     display: none;
   }
 }
